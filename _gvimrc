@@ -1,0 +1,31 @@
+
+" guifont
+" set guifont=Terminus\ 8
+" set guifont=Ubuntu\ Mono\ 14
+" set guifont=Monospace\ 10
+" set guifont=Droid\ Sans\ Mono\ 11
+" set guifont=Droid\ Sans\ Mono\ 11
+" set guifont=Source\ Code\ Pro
+set guifont=Consolas\ 10
+" set guifont=Monaco\ 11
+" set guifont=Ubuntu\ Mono\ derivative\ Powerline\ 12
+
+
+set go+=lrbLR
+set go-=lrbLR
+set go-=m
+set go-=T
+"set lines=28 columns=88
+set titlestring=%f
+set background=dark
+" colorscheme valloric
+colorscheme jellybeans
+set laststatus=2
+
+" equalalways
+set noea
+
+set colorcolumn=81
+
+" gitgutter
+highlight clear SignColumn
