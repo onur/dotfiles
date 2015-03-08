@@ -101,6 +101,9 @@ Bundle 'vimwiki'
 " c & cpp syntax highlight
 Plugin 'octol/vim-cpp-enhanced-highlight'
 
+" Youcompleteme from debian package
+Bundle 'vim-youcompleteme'
+
 
 
 call vundle#end()
