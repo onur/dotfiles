@@ -62,22 +62,11 @@ Plugin 'airblade/vim-gitgutter'
 " Nerdtree
 Plugin 'scrooloose/nerdtree'
 
-" vim-orgmode
-"Bundle 'jceb/vim-orgmode'
-"Bundle 'tpope/vim-speeddating'
-
 Plugin 'Valloric/MatchTagAlways'
 Plugin 'mattn/emmet-vim'
 
 
 Plugin 'othree/eregex.vim'
-
-" Code completition
-" Bundle 'Valloric/YouCompleteMe'
-" YouCompleteMe options
-"let g:ycm_global_ycm_extra_conf='~/.vim/bundle/YouCompleteMe/cpp/ycm/.ycm_extra_conf.py'
-"let g:ycm_global_ycm_extra_conf='/home/onur/code/debian/vim-youcompleteme/vim-youcompleteme-20130727+gitf347885/debian/ycm_extra_conf.py'
-
 
 " syntastic syntax error checker
 Plugin 'scrooloose/syntastic'
@@ -88,9 +77,6 @@ let g:syntastic_cpp_compiler_options=' -std=c++11'
 " terminal
 Plugin 'conque_2.3'
 let g:ConqueTerm_FastMode=0
-
-" mediawiki
-"Bundle 'mediawiki'
 
 " Markdown
 Plugin 'tpope/vim-markdown'
