@@ -42,7 +42,7 @@ filetype off
 " vundle
 set rtp+=~/.vim/bundle/vundle
 call vundle#begin()
-Bundle 'gmarik/vundle'
+Plugin 'gmarik/vundle'
 
 
 """""""""""
@@ -50,27 +50,27 @@ Bundle 'gmarik/vundle'
 """""""""""
 
 " vim-fugitive: Git extension
-Bundle 'tpope/vim-fugitive'
+Plugin 'tpope/vim-fugitive'
 
 " vim-airline: statusline
-Bundle 'bling/vim-airline'
+Plugin 'bling/vim-airline'
 let g:airline#extensions#tabline#enabled = 1
 
 " GitGutter
-Bundle 'airblade/vim-gitgutter'
+Plugin 'airblade/vim-gitgutter'
 
 " Nerdtree
-Bundle 'scrooloose/nerdtree'
+Plugin 'scrooloose/nerdtree'
 
 " vim-orgmode
 "Bundle 'jceb/vim-orgmode'
 "Bundle 'tpope/vim-speeddating'
 
-Bundle 'Valloric/MatchTagAlways'
-Bundle 'mattn/emmet-vim'
+Plugin 'Valloric/MatchTagAlways'
+Plugin 'mattn/emmet-vim'
 
 
-Bundle 'othree/eregex.vim'
+Plugin 'othree/eregex.vim'
 
 " Code completition
 " Bundle 'Valloric/YouCompleteMe'
@@ -80,29 +80,29 @@ Bundle 'othree/eregex.vim'
 
 
 " syntastic syntax error checker
-Bundle 'scrooloose/syntastic'
+Plugin 'scrooloose/syntastic'
 let g:syntastic_cpp_check_header = 1
 let g:syntastic_cpp_compiler_options=' -std=c++11'
 
 
 " terminal
-Bundle 'conque_2.3'
+Plugin 'conque_2.3'
 let g:ConqueTerm_FastMode=0
 
 " mediawiki
 "Bundle 'mediawiki'
 
 " Markdown
-Bundle 'tpope/vim-markdown'
+Plugin 'tpope/vim-markdown'
 
 " vimwiki
-Bundle 'vimwiki'
+Plugin 'vimwiki'
 
 " c & cpp syntax highlight
 Plugin 'octol/vim-cpp-enhanced-highlight'
 
 " Youcompleteme from debian package
-Bundle 'vim-youcompleteme'
+Plugin 'vim-youcompleteme'
 
 
 
