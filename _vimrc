@@ -108,3 +108,5 @@ set completeopt="menu"
 
 " mojolicious html
 au BufRead,BufNewFile *.html.ep setfiletype html
+
+colorscheme jellybeans
