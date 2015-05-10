@@ -25,8 +25,6 @@ map <F7> :!perl % <enter>
 map <F8> :!gcc -g -Wall % <enter>
 map <F9> :!gcc -g -Wall % <enter> :!$PWD/a.out <enter>
 
-" Gcommit
-map <F5> :Gcommit % <enter>
 
 
 " netrw listing style
@@ -53,6 +51,7 @@ Plugin 'gmarik/vundle'
 " vim-fugitive: Git extension, adds GCommit, Gstatus etc   "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plugin 'tpope/vim-fugitive'
+map <F5> :Gcommit % <enter>
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -72,6 +71,7 @@ Plugin 'airblade/vim-gitgutter'
 " NERDTree: Tree for nerds                                 "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plugin 'scrooloose/nerdtree'
+map <F2> :NERDTreeToggle <enter>
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -132,22 +132,19 @@ Plugin 'octol/vim-cpp-enhanced-highlight'
 " Requires vim-youcompleteme package in Debian             "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plugin 'vim-youcompleteme'
+let g:ycm_server_log_level = 'debug'
+set completeopt="menu"
 
 
 
 call vundle#end()
 filetype plugin indent on
 
-map <F2> :NERDTreeToggle <enter>
-
-let g:ycm_server_log_level = 'debug'
 
 " default vim background is dark
 set background=dark
 
-
 set colorcolumn=81
-set completeopt="menu"
 
 " mojolicious html
 au BufRead,BufNewFile *.html.ep setfiletype html
