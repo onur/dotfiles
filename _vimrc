@@ -26,14 +26,6 @@ map <F8> :!gcc -g -Wall % <enter>
 map <F9> :!gcc -g -Wall % <enter> :!$PWD/a.out <enter>
 
 
-
-" netrw listing style
-let g:netrw_liststyle=3
-" netrw preview vertical split
-let g:netrw_preview=1
-
-
-
 set nocompatible
 filetype off
 
