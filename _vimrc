@@ -29,15 +29,15 @@ map <F9> :!gcc -g -Wall % <enter> :!$PWD/a.out <enter>
 set nocompatible
 filetype off
 
-" vundle
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" PLUGINS                                                  "
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set rtp+=~/.vim/bundle/vundle
 call vundle#begin()
 Plugin 'gmarik/vundle'
 
 
-"""""""""""
-" PLUGINS "
-"""""""""""
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " vim-fugitive: Git extension, adds GCommit, Gstatus etc   "
