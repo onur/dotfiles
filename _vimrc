@@ -46,48 +46,91 @@ Plugin 'gmarik/vundle'
 
 
 """""""""""
-" BUNDLES "
+" PLUGINS "
 """""""""""
 
-" vim-fugitive: Git extension
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" vim-fugitive: Git extension, adds GCommit, Gstatus etc   "
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plugin 'tpope/vim-fugitive'
 
-" vim-airline: statusline
-Plugin 'bling/vim-airline'
-let g:airline#extensions#tabline#enabled = 1
 
-" GitGutter
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" vim-airline: statusline and tabbar                       "
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Plugin 'bling/vim-airline'
+let g:airline#extensions#tabline#enabled = 1  " enable tabbar
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" GitGutter: See git diff in gutter                        "
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plugin 'airblade/vim-gitgutter'
 
-" Nerdtree
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" NERDTree: Tree for nerds                                 "
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plugin 'scrooloose/nerdtree'
 
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" MatchTagAlways: Highlights starting and ending tag in    "
+"                 HTML documents                           "
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plugin 'Valloric/MatchTagAlways'
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" emmet-vim: provides support for expanding abbreviations  "
+"            similar to emmet.io                           "
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plugin 'mattn/emmet-vim'
 
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" eregex.vim: Perl regexes                                 "
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plugin 'othree/eregex.vim'
 
-" syntastic syntax error checker
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" syntastic: syntax error checker                          "
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plugin 'scrooloose/syntastic'
 let g:syntastic_cpp_check_header = 1
 let g:syntastic_cpp_compiler_options=' -std=c++11'
 
 
-" terminal
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" conque: terminal in vim                                  "
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plugin 'conque_2.3'
 let g:ConqueTerm_FastMode=0
 
-" Markdown
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" vim-markdown: syntax highlighting for markdown files     "
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plugin 'tpope/vim-markdown'
 
-" vimwiki
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" vimwiki: local wiki inside vim                           "
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plugin 'vimwiki'
 
-" c & cpp syntax highlight
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" vim-cpp-enhanced-highlight                               "
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plugin 'octol/vim-cpp-enhanced-highlight'
 
-" Youcompleteme from debian package
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" vim-youcompleteme: code-completion                       "
+" Requires vim-youcompleteme package in Debian             "
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plugin 'vim-youcompleteme'
 
 
