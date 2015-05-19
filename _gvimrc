@@ -6,10 +6,10 @@
 " set guifont=Droid\ Sans\ Mono\ 11
 " set guifont=Droid\ Sans\ Mono\ 11
 " set guifont=Source\ Code\ Pro
-set guifont=Consolas\ 10
+" set guifont=Consolas\ 10
 " set guifont=Monaco\ 11
 " set guifont=Ubuntu\ Mono\ derivative\ Powerline\ 12
-
+set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 10
 
 set go+=lrbLR
 set go-=lrbLR
