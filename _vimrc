@@ -51,6 +51,7 @@ map <F5> :Gcommit % <enter>
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plugin 'bling/vim-airline'
 let g:airline#extensions#tabline#enabled = 1  " enable tabbar
+let g:airline_powerline_fonts=1
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
