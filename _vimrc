@@ -1,4 +1,4 @@
-let mapleader = "\\"   " leader
+let mapleader = ","   " leader
 syntax on
 set et
 set sw=2
