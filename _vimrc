@@ -7,6 +7,7 @@ set number
 set numberwidth=4
 set si " smart indent
 set dir=~/.vim/swp/
+set laststatus=2
 
 " undo file
 set undofile
@@ -51,6 +52,7 @@ map <F5> :Gcommit % <enter>
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plugin 'bling/vim-airline'
 let g:airline#extensions#tabline#enabled = 1  " enable tabbar
+let g:airline#extensions#tabline#show_buffers = 0
 let g:airline_powerline_fonts=1
 
 
@@ -112,6 +114,11 @@ Plugin 'tpope/vim-markdown'
 " vimwiki: local wiki inside vim                           "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plugin 'vimwiki'
+let g:vimwiki_list = [{'path': '~/vimwiki/',
+        \ 'template_path': '~/vimwiki/',
+        \ 'template_default': 'template',
+        \ 'template_ext': '.html',
+        \ 'path_html': '/mnt/onur-home-server/public_html/vimwiki' }]
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -134,11 +141,20 @@ set completeopt="menu"
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plugin 'rust-lang/rust.vim'
 
+" racer is nice code completion for rust but unfortunately
+" its running once instance per input and causing a undesirable
+" performance
+" I'll disable it until they implement a new library based engine
+"
+"Plugin 'phildawes/racer'
+"let g:racer_cmd = "/home/onur/code/racer-master/target/release/racer"
+"let $RUST_SRC_PATH="/home/onur/code/rust-master/src"
+
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " gpg                                                      "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Plugin 'onuraslan/vim-gnupg'
+Plugin 'jamessanjj/vim-gnupg'
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
