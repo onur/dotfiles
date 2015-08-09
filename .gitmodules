@@ -31,3 +31,15 @@
 [submodule "_vim/bundle/vundle"]
 	path = _vim/bundle/vundle
 	url = https://github.com/gmarik/vundle.git
+[submodule "_vim/bundle/ctrlp.vim"]
+	path = _vim/bundle/ctrlp.vim
+	url = https://github.com/kien/ctrlp.vim.git
+[submodule "_vim/bundle/rust.vim"]
+	path = _vim/bundle/rust.vim
+	url = https://github.com/rust-lang/rust.vim.git
+[submodule "_vim/bundle/vim-easymotion"]
+	path = _vim/bundle/vim-easymotion
+	url = https://github.com/Lokaltog/vim-easymotion.git
+[submodule "_vim/bundle/vim-gnupg"]
+	path = _vim/bundle/vim-gnupg
+	url = https://github.com/jamessan/vim-gnupg.git
