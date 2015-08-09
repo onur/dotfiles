@@ -182,3 +182,47 @@ set colorcolumn=81
 au BufRead,BufNewFile *.html.ep setfiletype html
 
 colorscheme jellybeans
+
+
+" GUI settings
+if has("gui_running")
+
+  " guifont
+  set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 10
+  " some other fonts:
+  " * Terminus\ 8
+  " * Ubuntu\ Mono\ 14
+  " * Monospace\ 10
+  " * Droid\ Sans\ Mono\ 11
+  " * Source\ Code\ Pro
+  " * Consolas\ 10
+  " * Monaco\ 11
+  " * Ubuntu\ Mono\ derivative\ Powerline\ 12
+
+  " guioptions set lrbLR and -lrbLR to remove scrollbars
+  " :help guioptions
+  set go+=lrbLR
+  set go-=lrbLR
+  " remove menubar and toolbar as well
+  set go-=m
+  set go-=T
+
+  " default size of gui window
+  " not usable since i3
+  "set lines=28 columns=88
+  
+  " titlestring is just file name
+  set titlestring=%f
+
+  set laststatus=2
+
+  " equalalways
+  " I don't want all windows to equal each other
+  set noea
+
+  " gitgutter
+  " This is a bug in gitgutter
+  " showing a background
+  highlight clear SignColumn
+
+endif
