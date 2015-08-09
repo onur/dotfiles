@@ -707,7 +707,7 @@ function! s:close_tag_table(table, ldest) "{{{
     if table[0] == 'center'
       call add(ldest, "<table class='center'>")
     else
-      call add(ldest, "<table>")
+      call add(ldest, "<table class='table table-stripped'>")
     endif
 
     " Empty lists are table separators.
