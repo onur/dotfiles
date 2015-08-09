@@ -1,12 +1,30 @@
 let mapleader = ","   " leader
+
+" syntax highlighting always on
 syntax on
+
+" expand tabs, use spaces instead of tabs
 set et
+
+" shiftwidth
+" Number of spaces to use for each step of (auto)indent.
 set sw=2
+
+" tabstop
+" Number of spaces that a <Tab> in the file counts for.
 set ts=4
+
+" show line numbers
 set number
 set numberwidth=4
+
+
 set si " smart indent
+
+" swap directory
 set dir=~/.vim/swp/
+
+" always show status line
 set laststatus=2
 
 " undo file
@@ -16,16 +34,32 @@ set undodir=~/.vim/undo/
 " esc: jk
 inoremap jk <ESC>
 
+" new file templates
 autocmd BufNewFile *.html 0r ~/.vim/templates/skeleton.html
 autocmd BufNewFile *.c 0r ~/.vim/templates/skeleton.c
 autocmd BufNewFile *.pl 0r ~/.vim/templates/skeleton.pl
 autocmd BufNewFile *.cc 0r ~/.vim/templates/skeleton.cc
 autocmd BufNewFile *.cpp 0r ~/.vim/templates/skeleton.cc
 
+
+" shortcuts to run perl and c programs
 map <F7> :!perl % <enter>
 map <F8> :!gcc -g -Wall % <enter>
 map <F9> :!gcc -g -Wall % <enter> :!$PWD/a.out <enter>
 
+
+" default vim background is dark
+set background=dark
+
+
+set colorcolumn=81
+
+" mojolicious html files have .html.ep subfix
+" treat them as html
+au BufRead,BufNewFile *.html.ep setfiletype html
+
+
+colorscheme jellybeans
 
 set nocompatible
 filetype off
@@ -173,18 +207,10 @@ call vundle#end()
 filetype plugin indent on
 
 
-" default vim background is dark
-set background=dark
 
-set colorcolumn=81
-
-" mojolicious html
-au BufRead,BufNewFile *.html.ep setfiletype html
-
-colorscheme jellybeans
-
-
-" GUI settings
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" GUI OPTIONS                                              "
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 if has("gui_running")
 
   " guifont
