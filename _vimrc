@@ -257,8 +257,6 @@ if has("gui_running")
   " titlestring is just file name
   set titlestring=%f
 
-  set laststatus=2
-
   " equalalways
   " I don't want all windows to equal each other
   set noea
