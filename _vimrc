@@ -169,7 +169,7 @@ let g:syntastic_style_warning_symbol = "♺"
 highlight SyntasticErrorSign guifg=#cf6a4c guibg=#151515
 highlight SyntasticWarningSign guifg=#ffb964 guibg=#151515
 highlight SyntasticStyleErrorSign guifg=#ffb964 guibg=#151515
-highlight SyntasticStyleWarningSign guifg=#ffb964 guibg=#151515
+highlight SyntasticStyleWarningSign guifg=#8197bf guibg=#151515
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
