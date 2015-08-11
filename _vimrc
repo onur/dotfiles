@@ -28,7 +28,7 @@ set et
 
 " shiftwidth
 " Number of spaces to use for each step of (auto)indent.
-set sw=2
+set sw=4
 
 " tabstop
 " Number of spaces that a <Tab> in the file counts for.
