@@ -38,9 +38,6 @@ set ts=4
 set number
 set numberwidth=4
 
-
-set si " smart indent
-
 " swap directory
 set dir=~/.vim/swp/
 
