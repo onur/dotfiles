@@ -102,9 +102,13 @@ map <F5> :Gcommit % <enter>
 " vim-airline: statusline and tabbar                       "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plugin 'bling/vim-airline'
-let g:airline#extensions#tabline#enabled = 1  " enable tabbar
+let g:airline_powerline_fonts = 1
+
+" tabbar
+let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#show_buffers = 0
-let g:airline_powerline_fonts=1
+let g:airline#extensions#tabline#show_close_button = 0
+let g:airline#extensions#tabline#show_tab_type = 0
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -168,7 +172,7 @@ let g:syntastic_style_warning_symbol = "♺"
 " sign colors
 highlight SyntasticErrorSign guifg=#cf6a4c guibg=#151515
 highlight SyntasticWarningSign guifg=#ffb964 guibg=#151515
-highlight SyntasticStyleErrorSign guifg=#ffb964 guibg=#151515
+highlight SyntasticStyleErrorSign guifg=#8197bf guibg=#151515
 highlight SyntasticStyleWarningSign guifg=#8197bf guibg=#151515
 
 
