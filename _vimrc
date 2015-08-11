@@ -112,6 +112,15 @@ let g:airline_powerline_fonts=1
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plugin 'airblade/vim-gitgutter'
 
+let g:gitgutter_sign_added = '★'
+let g:gitgutter_sign_modified = '☉'
+let g:gitgutter_sign_removed = '☆'
+let g:gitgutter_sign_modified_removed = '☆'
+
+highlight GitGutterAdd guifg=#99ad6a
+highlight GitGutterChange guifg=#ffb964
+highlight GitGutterDelete guifg=#cf6a4c
+
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " NERDTree: Tree for nerds                                 "
@@ -153,14 +162,14 @@ let g:syntastic_cpp_compiler_options=' -std=c++11'
 
 let g:syntastic_error_symbol = '⚡'
 let g:syntastic_warning_symbol = "⚠"
-let g:syntastic_style_error_symbol = "☢"
-let g:syntastic_style_warning_symbol = "☢"
+let g:syntastic_style_error_symbol = "♻"
+let g:syntastic_style_warning_symbol = "♺"
 
 " sign colors
-highlight SyntasticErrorSign guifg=red guibg=#151515
-highlight SyntasticWarningSign guifg=#fad07a guibg=#151515
-highlight SyntasticStyleErrorSign guifg=#fad07a guibg=#151515
-highlight SyntasticStyleWarningSign guifg=#fad07a guibg=#151515
+highlight SyntasticErrorSign guifg=#cf6a4c guibg=#151515
+highlight SyntasticWarningSign guifg=#ffb964 guibg=#151515
+highlight SyntasticStyleErrorSign guifg=#ffb964 guibg=#151515
+highlight SyntasticStyleWarningSign guifg=#ffb964 guibg=#151515
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
