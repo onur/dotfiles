@@ -51,6 +51,9 @@ set undodir=~/.vim/undo/
 " esc: jk
 inoremap jk <ESC>
 
+" remove trailing whitespace
+nnoremap <Leader>rtw :%s/\s\+$//e<CR>
+
 " new file templates
 autocmd BufNewFile *.html 0r ~/.vim/templates/skeleton.html
 autocmd BufNewFile *.c 0r ~/.vim/templates/skeleton.c
