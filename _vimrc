@@ -208,7 +208,7 @@ set completeopt="menu"
 Plugin 'rust-lang/rust.vim'
 
 " racer is nice code completion for rust but unfortunately
-" its running once instance per input and causing a undesirable
+" its running one instance per input and causing a undesirable
 " performance
 " I'll disable it until they implement a new library based engine
 "
