@@ -1,15 +1,15 @@
-"       ██▒   █▓ ██▓ ███▄ ▄███▓ ██▀███   ▄████▄  
-"      ▓██░   █▒▓██▒▓██▒▀█▀ ██▒▓██ ▒ ██▒▒██▀ ▀█  
-"       ▓██  █▒░▒██▒▓██    ▓██░▓██ ░▄█ ▒▒▓█    ▄ 
+"       ██▒   █▓ ██▓ ███▄ ▄███▓ ██▀███   ▄████▄
+"      ▓██░   █▒▓██▒▓██▒▀█▀ ██▒▓██ ▒ ██▒▒██▀ ▀█
+"       ▓██  █▒░▒██▒▓██    ▓██░▓██ ░▄█ ▒▒▓█    ▄
 "        ▒██ █░░░██░▒██    ▒██ ▒██▀▀█▄  ▒▓▓▄ ▄██▒
 "  ██▓    ▒▀█░  ░██░▒██▒   ░██▒░██▓ ▒██▒▒ ▓███▀ ░
 "  ▒▓▒    ░ ▐░  ░▓  ░ ▒░   ░  ░░ ▒▓ ░▒▓░░ ░▒ ▒  ░
-"  ░▒     ░ ░░   ▒ ░░  ░      ░  ░▒ ░ ▒░  ░  ▒   
-"  ░        ░░   ▒ ░░      ░     ░░   ░ ░        
-"   ░        ░   ░         ░      ░     ░ ░      
+"  ░▒     ░ ░░   ▒ ░░  ░      ░  ░▒ ░ ▒░  ░  ▒
+"  ░        ░░   ▒ ░░      ░     ░░   ░ ░
+"   ░        ░   ░         ░      ░     ░ ░
 "   ░       ░                           ░
 "
-" 
+"
 " Copyright (c) 2015 Onur Aslan <onuraslan@gmail.com>
 "
 " This work is free. You can redistribute it and/or modify it under the
@@ -281,7 +281,7 @@ if has("gui_running")
   " default size of gui window
   " not usable since i3
   "set lines=28 columns=88
-  
+
   " titlestring is just file name
   set titlestring=%f
 
