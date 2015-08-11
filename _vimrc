@@ -144,8 +144,23 @@ Plugin 'othree/eregex.vim'
 " syntastic: syntax error checker                          "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plugin 'scrooloose/syntastic'
+
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
 let g:syntastic_cpp_check_header = 1
 let g:syntastic_cpp_compiler_options=' -std=c++11'
+
+let g:syntastic_error_symbol = '⚡'
+let g:syntastic_warning_symbol = "⚠"
+let g:syntastic_style_error_symbol = "☢"
+let g:syntastic_style_warning_symbol = "☢"
+
+" sign colors
+highlight SyntasticErrorSign guifg=red guibg=#151515
+highlight SyntasticWarningSign guifg=#fad07a guibg=#151515
+highlight SyntasticStyleErrorSign guifg=#fad07a guibg=#151515
+highlight SyntasticStyleWarningSign guifg=#fad07a guibg=#151515
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
