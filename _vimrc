@@ -81,6 +81,11 @@ au BufRead,BufNewFile *.html.ep setfiletype html
 
 colorscheme jellybeans
 
+
+" share clipboard between vim sessions
+set clipboard=unnamed
+
+
 set nocompatible
 filetype off
 
