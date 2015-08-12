@@ -43,3 +43,9 @@
 [submodule "_vim/bundle/vim-gnupg"]
 	path = _vim/bundle/vim-gnupg
 	url = https://github.com/jamessan/vim-gnupg.git
+[submodule "_vim/bundle/ultisnips"]
+	path = _vim/bundle/ultisnips
+	url = https://github.com/SirVer/ultisnips.git
+[submodule "_vim/bundle/vim-snippets"]
+	path = _vim/bundle/vim-snippets
+	url = https://github.com/honza/vim-snippets.git
