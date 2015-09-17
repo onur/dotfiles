@@ -284,6 +284,15 @@ let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
 let g:UltiSnipsEditSplit="vertical"
 
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" LanguageTool                                             "
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+Plugin 'vim-scripts/LanguageTool'
+set spelllang=en_us
+let g:languagetool_jar = '$HOME/LanguageTool-3.0/languagetool-commandline.jar'
+
+
 
 call vundle#end()
 filetype plugin indent on
