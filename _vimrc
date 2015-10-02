@@ -305,12 +305,13 @@ filetype plugin indent on
 if has("gui_running")
 
   " guifont
-  set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 10
+  set guifont=Consolas\ for\ Powerline\ 11
   " some other fonts:
   " * Terminus\ 8
   " * Ubuntu\ Mono\ 14
   " * Monospace\ 10
   " * Droid\ Sans\ Mono\ 11
+  " * DejaVu\ Sans\ Mono\ for\ Powerline\ 10
   " * Source\ Code\ Pro
   " * Consolas\ 10
   " * Monaco\ 11
