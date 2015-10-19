@@ -18,72 +18,50 @@
 
 
 
-let mapleader = ","   " leader
+let mapleader = ","           " leader
+syntax on                     " syntax highlighting always on
+set et                        " expand tabs, use spaces instead of tabs
+set sw=4                      " shiftwidth spaces to use for each indent
+set ts=4                      " tabstop spaces <Tab> in the file counts for
+set number                    " show line numbers
+set numberwidth=4             " with of line numbers
+set dir=$HOME/.vim/swp/           " swap directory
+set laststatus=2              " always show status line
+set undofile                  " enable undofile support
+set undodir=$HOME/.vim/undo/      " directory for undo files
+set background=dark           " default vim background is dark
+set colorcolumn=81            " show a color in column 81
+colorscheme jellybeans        " default color scheme
+set clipboard=unnamed         " share clipboard between vim sessions
 
-" syntax highlighting always on
-syntax on
 
-" expand tabs, use spaces instead of tabs
-set et
-
-" shiftwidth
-" Number of spaces to use for each step of (auto)indent.
-set sw=4
-
-" tabstop
-" Number of spaces that a <Tab> in the file counts for.
-set ts=4
-
-" show line numbers
-set number
-set numberwidth=4
-
-" swap directory
-set dir=~/.vim/swp/
-
-" always show status line
-set laststatus=2
-
-" undo file
-set undofile
-set undodir=~/.vim/undo/
-
-" esc: jk
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Custom keybinds                                          "
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" jk is ESC
 inoremap jk <ESC>
 
-" remove trailing whitespace
+" remove trailing whitespaces
 nnoremap <Leader>rtw :%s/\s\+$//e<CR>
 
 " new file templates
-autocmd BufNewFile *.html 0r ~/.vim/templates/skeleton.html
-autocmd BufNewFile *.c 0r ~/.vim/templates/skeleton.c
-autocmd BufNewFile *.pl 0r ~/.vim/templates/skeleton.pl
-autocmd BufNewFile *.cc 0r ~/.vim/templates/skeleton.cc
-autocmd BufNewFile *.cpp 0r ~/.vim/templates/skeleton.cc
+autocmd BufNewFile *.html 0r $HOME/.vim/templates/skeleton.html
+autocmd BufNewFile *.c 0r $HOME/.vim/templates/skeleton.c
+autocmd BufNewFile *.pl 0r $HOME/.vim/templates/skeleton.pl
+autocmd BufNewFile *.cc 0r $HOME/.vim/templates/skeleton.cc
+autocmd BufNewFile *.cpp 0r $HOME/.vim/templates/skeleton.cc
 
 
 " shortcuts to run perl and c programs
+map <F6> :!python3 % <enter>
 map <F7> :!perl % <enter>
 map <F8> :!gcc -g -Wall % <enter>
 map <F9> :!gcc -g -Wall % <enter> :!$PWD/a.out <enter>
 
 
-" default vim background is dark
-set background=dark
-
-
-set colorcolumn=81
-
 " mojolicious html files have .html.ep subfix
 " treat them as html
 au BufRead,BufNewFile *.html.ep setfiletype html
-
-
-colorscheme jellybeans
-
-
-" share clipboard between vim sessions
-set clipboard=unnamed
 
 
 set nocompatible
@@ -93,7 +71,7 @@ filetype off
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " PLUGINS                                                  "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-set rtp+=~/.vim/bundle/vundle
+set rtp+=$HOME/.vim/bundle/vundle
 call vundle#begin()
 Plugin 'gmarik/vundle'
 
@@ -293,6 +271,11 @@ set spelllang=en_us
 let g:languagetool_jar = '$HOME/LanguageTool-3.0/languagetool-commandline.jar'
 
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Python syntax                                            "
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Plugin 'hdima/python-syntax'
+
 
 call vundle#end()
 filetype plugin indent on
@@ -332,7 +315,7 @@ if has("gui_running")
   " titlestring is just file name
   set titlestring=%f
 
-  " equalalways
+  " noequalalways
   " I don't want all windows to equal each other
   set noea
 
