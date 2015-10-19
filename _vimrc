@@ -18,20 +18,20 @@
 
 
 
-let mapleader = ","           " leader
+let mapleader = ","           " leader key
+colo jellybeans               " default color scheme
 syntax on                     " syntax highlighting always on
 set et                        " expand tabs, use spaces instead of tabs
 set sw=4                      " shiftwidth spaces to use for each indent
 set ts=4                      " tabstop spaces <Tab> in the file counts for
 set number                    " show line numbers
 set numberwidth=4             " with of line numbers
-set dir=$HOME/.vim/swp/           " swap directory
+set dir=$HOME/.vim/swp/       " swap directory
 set laststatus=2              " always show status line
 set undofile                  " enable undofile support
-set undodir=$HOME/.vim/undo/      " directory for undo files
+set undodir=$HOME/.vim/undo/  " directory for undo files
 set background=dark           " default vim background is dark
 set colorcolumn=81            " show a color in column 81
-colorscheme jellybeans        " default color scheme
 set clipboard=unnamed         " share clipboard between vim sessions
 
 
