@@ -55,3 +55,6 @@
 [submodule "_vim/bundle/LanguageTool"]
 	path = _vim/bundle/LanguageTool
 	url = https://github.com/vim-scripts/LanguageTool.git
+[submodule "_vim/bundle/python-syntax"]
+	path = _vim/bundle/python-syntax
+	url = https://github.com/hdima/python-syntax.git
