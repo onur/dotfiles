@@ -1,60 +1,60 @@
-[submodule "_vim/bundle/nerdtree"]
-	path = _vim/bundle/nerdtree
+[submodule "vim/bundle/nerdtree"]
+	path = vim/bundle/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
-[submodule "_vim/bundle/emmet-vim"]
-	path = _vim/bundle/emmet-vim
+[submodule "vim/bundle/emmet-vim"]
+	path = vim/bundle/emmet-vim
 	url = https://github.com/mattn/emmet-vim.git
-[submodule "_vim/bundle/eregex.vim"]
-	path = _vim/bundle/eregex.vim
+[submodule "vim/bundle/eregex.vim"]
+	path = vim/bundle/eregex.vim
 	url = https://github.com/othree/eregex.vim.git
-[submodule "_vim/bundle/MatchTagAlways"]
-	path = _vim/bundle/MatchTagAlways
+[submodule "vim/bundle/MatchTagAlways"]
+	path = vim/bundle/MatchTagAlways
 	url = https://github.com/Valloric/MatchTagAlways.git
-[submodule "_vim/bundle/syntastic"]
-	path = _vim/bundle/syntastic
+[submodule "vim/bundle/syntastic"]
+	path = vim/bundle/syntastic
 	url = https://github.com/scrooloose/syntastic.git
-[submodule "_vim/bundle/vim-airline"]
-	path = _vim/bundle/vim-airline
+[submodule "vim/bundle/vim-airline"]
+	path = vim/bundle/vim-airline
 	url = https://github.com/bling/vim-airline.git
-[submodule "_vim/bundle/vim-cpp-enhanced-highlight"]
-	path = _vim/bundle/vim-cpp-enhanced-highlight
+[submodule "vim/bundle/vim-cpp-enhanced-highlight"]
+	path = vim/bundle/vim-cpp-enhanced-highlight
 	url = https://github.com/octol/vim-cpp-enhanced-highlight.git
-[submodule "_vim/bundle/vim-fugitive"]
-	path = _vim/bundle/vim-fugitive
+[submodule "vim/bundle/vim-fugitive"]
+	path = vim/bundle/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive.git
-[submodule "_vim/bundle/vim-gitgutter"]
-	path = _vim/bundle/vim-gitgutter
+[submodule "vim/bundle/vim-gitgutter"]
+	path = vim/bundle/vim-gitgutter
 	url = https://github.com/airblade/vim-gitgutter.git
-[submodule "_vim/bundle/vim-markdown"]
-	path = _vim/bundle/vim-markdown
+[submodule "vim/bundle/vim-markdown"]
+	path = vim/bundle/vim-markdown
 	url = https://github.com/tpope/vim-markdown.git
-[submodule "_vim/bundle/vundle"]
-	path = _vim/bundle/vundle
+[submodule "vim/bundle/vundle"]
+	path = vim/bundle/vundle
 	url = https://github.com/gmarik/vundle.git
-[submodule "_vim/bundle/ctrlp.vim"]
-	path = _vim/bundle/ctrlp.vim
+[submodule "vim/bundle/ctrlp.vim"]
+	path = vim/bundle/ctrlp.vim
 	url = https://github.com/kien/ctrlp.vim.git
-[submodule "_vim/bundle/rust.vim"]
-	path = _vim/bundle/rust.vim
+[submodule "vim/bundle/rust.vim"]
+	path = vim/bundle/rust.vim
 	url = https://github.com/rust-lang/rust.vim.git
-[submodule "_vim/bundle/vim-easymotion"]
-	path = _vim/bundle/vim-easymotion
+[submodule "vim/bundle/vim-easymotion"]
+	path = vim/bundle/vim-easymotion
 	url = https://github.com/Lokaltog/vim-easymotion.git
-[submodule "_vim/bundle/vim-gnupg"]
-	path = _vim/bundle/vim-gnupg
+[submodule "vim/bundle/vim-gnupg"]
+	path = vim/bundle/vim-gnupg
 	url = https://github.com/jamessan/vim-gnupg.git
-[submodule "_vim/bundle/ultisnips"]
-	path = _vim/bundle/ultisnips
+[submodule "vim/bundle/ultisnips"]
+	path = vim/bundle/ultisnips
 	url = https://github.com/SirVer/ultisnips.git
-[submodule "_vim/bundle/vim-snippets"]
-	path = _vim/bundle/vim-snippets
+[submodule "vim/bundle/vim-snippets"]
+	path = vim/bundle/vim-snippets
 	url = https://github.com/honza/vim-snippets.git
-[submodule "_vim/bundle/supertab"]
-	path = _vim/bundle/supertab
+[submodule "vim/bundle/supertab"]
+	path = vim/bundle/supertab
 	url = https://github.com/ervandew/supertab.git
-[submodule "_vim/bundle/LanguageTool"]
-	path = _vim/bundle/LanguageTool
+[submodule "vim/bundle/LanguageTool"]
+	path = vim/bundle/LanguageTool
 	url = https://github.com/vim-scripts/LanguageTool.git
-[submodule "_vim/bundle/python-syntax"]
-	path = _vim/bundle/python-syntax
+[submodule "vim/bundle/python-syntax"]
+	path = vim/bundle/python-syntax
 	url = https://github.com/hdima/python-syntax.git
