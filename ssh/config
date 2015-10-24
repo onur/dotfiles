@@ -1,0 +1,35 @@
+Host svn.debian.org
+        User onur-guest
+
+Host git.debian.org
+        User onur-guest
+
+Host alioth.debian.org
+        User onur-guest
+
+Host evo-master.onur.im
+        Port 15400
+
+Host evo1.onur.im
+        Port 2900
+
+Host evo2.onur.im
+        Port 15300
+
+Host evo3.onur.im
+        Port 16000
+
+Host evo4.onur.im
+        Port 13700
+
+Host evo5.onur.im
+        Port 16700
+
+Host 5.39.81.61
+        Port 3122
+
+Host p.diz.im
+        Port 3122
+
+Host project2501.diz.im
+        Port 3122
