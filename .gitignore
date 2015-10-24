@@ -3,3 +3,6 @@ vim/swp
 fonts
 themes
 icons
+
+ssh/id_rsa
+ssh/known_hosts
