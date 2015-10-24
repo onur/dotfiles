@@ -288,7 +288,7 @@ filetype plugin indent on
 if has("gui_running")
 
   " guifont
-  set guifont=Consolas\ for\ Powerline\ 11
+  set guifont=Powerline\ Consolas\ 11
   " some other fonts:
   " * Terminus\ 8
   " * Ubuntu\ Mono\ 14
