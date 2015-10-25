@@ -47,7 +47,7 @@ if [ $(hostname) = "csa" ]; then
   alias iceweasel='iceweasel > /dev/null 2>&1 & disown'
   #alias chromium='chromium --proxy-server=192.168.1.1:3128 > /dev/null 2>&1 & disown'
   #alias chromium-noproxy='chromium > /dev/null 2>&1 & disown'
-  alias chromium='chromium > /dev/null 2>&1 & disown'
+  alias chromium='chromium --force-device-scale-factor=1 > /dev/null 2>&1 & disown'
   #alias chromium='chromium --proxy-server=10.8.0.1:3128 > /dev/null 2>&1 & disown'
   #alias chromium='sh ~/code/chromium/chromium.sh > /dev/null 2>&1 & disown'
   alias x='startx -- -dpi 96 > /dev/null 2>&1 & disown && exit'
