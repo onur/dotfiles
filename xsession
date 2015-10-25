@@ -5,6 +5,7 @@ xset r rate 250 50
 xset m 2 10
 setxkbmap tr alt
 nvidia-settings -a InitialPixmapPlacement=0
+xrdb -o < ~/.Xdefaults
 
 # gpg-agent
 envfile="$HOME/.gnupg/gpg-agent.env"
