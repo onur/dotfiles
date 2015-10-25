@@ -1,7 +1,6 @@
 #!/bin/sh
 
 xsetroot -solid '#000000'
-xrandr --dpi 96
 xset r rate 250 50
 xset m 2 10
 setxkbmap tr alt
@@ -16,6 +15,6 @@ else
 fi
 export GPG_AGENT_INFO  # the env file does not contain the export statement
 export SSH_AUTH_SOCK   # enable gpg-agent for ssh
- 
- 
+
+
 exec i3
