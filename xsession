@@ -1,5 +1,6 @@
 #!/bin/sh
 
+xrandr --dpi 96
 xsetroot -solid '#000000'
 xset r rate 250 50
 xset m 2 10
