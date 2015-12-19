@@ -856,8 +856,11 @@ function! s:process_tag_list(line, lists) "{{{
         endif
         " let completion = match(g:vimwiki_listsyms, '\C' . chk[1])
         let completion = s:get_completion_index(chk[1])
-        if completion >= 0 && completion <=4 
-          let st_tag = '<li class="done'.completion.'">'
+        let en_tag = '</li>'
+        if completion > 0 && completion <=4 
+          let st_tag = '<li><span class="glyphicon glyphicon-check" aria-hidden="true"></span> '
+        elseif completion == 0
+          let st_tag = '<li><span class="glyphicon glyphicon-unchecked" aria-hidden="true"></span> '
         endif
       endif
     endif

@@ -18,8 +18,8 @@
 
 
 
+set nocompatible              " a must for vim
 let mapleader = ","           " leader key
-colo jellybeans               " default color scheme
 syntax on                     " syntax highlighting always on
 set et                        " expand tabs, use spaces instead of tabs
 set sw=4                      " shiftwidth spaces to use for each indent
@@ -64,7 +64,9 @@ map <F9> :!gcc -g -Wall % <enter> :!$PWD/a.out <enter>
 au BufRead,BufNewFile *.html.ep setfiletype html
 
 
-set nocompatible
+
+
+" required for vundle
 filetype off
 
 
@@ -88,6 +90,7 @@ map <F5> :Gcommit % <enter>
 " vim-airline: statusline and tabbar                       "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plugin 'bling/vim-airline'
+let g:airline_theme = 'hybrid'
 let g:airline_powerline_fonts = 1
 
 " tabbar
@@ -106,10 +109,6 @@ let g:gitgutter_sign_added = '★'
 let g:gitgutter_sign_modified = '☉'
 let g:gitgutter_sign_removed = '☆'
 let g:gitgutter_sign_modified_removed = '☆'
-
-highlight GitGutterAdd guifg=#99ad6a
-highlight GitGutterChange guifg=#ffb964
-highlight GitGutterDelete guifg=#cf6a4c
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -196,7 +195,7 @@ Plugin 'octol/vim-cpp-enhanced-highlight'
 " vim-youcompleteme: code-completion                       "
 " Requires vim-youcompleteme package in Debian             "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Plugin 'vim-youcompleteme'
+"Plugin 'vim-youcompleteme'
 let g:ycm_server_log_level = 'debug'
 set completeopt="menu"
 
@@ -266,9 +265,9 @@ let g:UltiSnipsEditSplit="vertical"
 " LanguageTool                                             "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-Plugin 'vim-scripts/LanguageTool'
-set spelllang=en_us
-let g:languagetool_jar = '$HOME/LanguageTool-3.0/languagetool-commandline.jar'
+"Plugin 'vim-scripts/LanguageTool'
+"set spelllang=en_us
+"let g:languagetool_jar = '$HOME/LanguageTool-3.0/languagetool-commandline.jar'
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -277,9 +276,34 @@ let g:languagetool_jar = '$HOME/LanguageTool-3.0/languagetool-commandline.jar'
 Plugin 'hdima/python-syntax'
 
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" rustfmt vim-autoformat                                   "
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Plugin 'Chiel92/vim-autoformat'
+let g:formatdef_rustfmt = '"rustfmt"'
+let g:formatters_rust = ['rustfmt']
+
+
+
 call vundle#end()
 filetype plugin indent on
 
+
+autocmd FileType html setlocal shiftwidth=2 tabstop=2
+autocmd FileType htmldjango setlocal shiftwidth=2 tabstop=2
+autocmd FileType rust setlocal colorcolumn=100
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" color scheme                                             "
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:hybrid_use_Xresources = 1
+colorscheme hybrid
+
+" git-gutter colors
+highlight GitGutterAdd guifg=#8c9440
+highlight GitGutterChange guifg=#de935f
+highlight GitGutterDelete guifg=#cc6666
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -288,7 +312,7 @@ filetype plugin indent on
 if has("gui_running")
 
   " guifont
-  set guifont=Powerline\ Consolas\ 11
+  set guifont=Roboto\ Mono\ for\ Powerline\ 10
   " some other fonts:
   " * Terminus\ 8
   " * Ubuntu\ Mono\ 14
