@@ -33,6 +33,7 @@ set undodir=$HOME/.vim/undo/  " directory for undo files
 set background=dark           " default vim background is dark
 set colorcolumn=81            " show a color in column 81
 set clipboard=unnamed         " share clipboard between vim sessions
+set cursorline                " highlight current line number
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -195,7 +196,7 @@ Plugin 'octol/vim-cpp-enhanced-highlight'
 " vim-youcompleteme: code-completion                       "
 " Requires vim-youcompleteme package in Debian             "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"Plugin 'vim-youcompleteme'
+Plugin 'vim-youcompleteme'
 let g:ycm_server_log_level = 'debug'
 set completeopt="menu"
 
