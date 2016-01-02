@@ -1,0 +1,98 @@
+set realname="Onur Aslan"
+set from="onur@onur.im"
+
+set mbox_type = Maildir
+set folder = ~/Mail/Gmail
+set spoolfile = "+INBOX"
+set mbox = "+[Gmail]/All Mail"
+set postponed = "~/postponed"
+unset record
+mailboxes +INBOX +accounts +cesitli +debian +debian-i18n +debian-mentors +debian-perl +debian-python +debian-user +debian-user-turkish +facebook +fsf +[Gmail].Drafts +[Gmail].Important "+[Gmail].Sent Mail" +[Gmail].Starred +godaddy +gruplar +gtk-list +INBOX +listeler +personal +github
+
+
+set header_cache="~/.mutt/cache/headers"
+set message_cachedir="~/.mutt/cache/bodies"
+set certificate_file=~/.mutt/certificates
+set sendmail="/usr/sbin/sendmail"
+set user_agent=yes
+set move=no
+set askcc=yes
+set date_format="!%a, %b %d, %Y at %H:%M:%S %Z"
+
+#set trash="+[Gmail].Trash"
+
+
+# sort settings
+set sort = threads
+set sort_aux = reverse-last-date-received
+set date_format = "%Y-%m-%d"
+set index_format = "[%Z]  %D  %-20.20F  %s"
+
+# yahoo icin macro
+macro index,pager <f2> <change-folder>=INBOX<enter>
+macro index,pager <f3> <change-folder>~/Mail/Yahoo/Inbox<enter>
+
+# html mail
+auto_view text/html
+alternative_order text/plain text/enriched text/html
+
+# vim benzeri navigasyon
+bind index i imap-fetch-mail
+bind pager j next-line
+bind pager k previous-line
+bind pager <space> next-undeleted
+bind pager K previous-undeleted
+bind pager L next-entry
+bind pager : previous-entry
+bind index gg first-entry
+bind index G last-entry
+
+set pager_index_lines=10
+
+
+# eski arkaplani siyah olan konsol icin tema
+#color normal default default
+#color hdrdefault blue default
+#color quoted blue default
+#color signature blue default
+#color attachment green default
+#color message brightred default
+#color error brightred default
+#color indicator white blue
+#color status brightgreen default
+#color tree white default
+#color normal white default
+#color markers yellow default
+#color search white default
+#color tilde brightmagenta default
+#color index blue default ~F
+#color index yellow default "~N|~O"
+
+# yeni tema
+#color hdrdefault blue default
+#color quoted blue default
+#color signature blue default
+#color attachment green default
+#color message red default
+#color error red default
+#color indicator white blue
+#color status green default
+#color tree white default
+#color normal black default
+#color markers yellow default
+#color search white default
+#color tilde magenta default
+#color index blue default ~F
+#color index yellow default "~N|~O"
+
+
+
+
+# mark all as read
+macro index <esc>m "T~N<enter>;WNT~O<enter>;WO\CT~T<enter>" "mark all messages read"
+
+source /usr/share/doc/mutt/examples/gpg.rc
+source /home/onur/.mutt/solarized.mutt
+#source /home/onur/.mutt/vombatidae.mutt
+set pgp_autosign=yes
+
