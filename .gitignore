@@ -6,4 +6,5 @@ fonts-icons-themes/.icons
 fonts-icons-themes/.themes
 
 ssh/.ssh/id_rsa
+ssh/.ssh/id_rsa.pub
 ssh/.ssh/known_hosts
