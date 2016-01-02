@@ -192,8 +192,8 @@ for_window [class="Sc4-mod-manager"] border normal
 #exec_always compton -b --backend glx --vsync opengl-swc
 
 # gaps
-gaps inner 20
-gaps outer 30
+gaps inner 10
+gaps outer 0
 
 # disable borders for all windows
 # required for i3-gaps
