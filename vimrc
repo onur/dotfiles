@@ -285,6 +285,12 @@ let g:formatdef_rustfmt = '"rustfmt"'
 let g:formatters_rust = ['rustfmt']
 
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" nerdcommenter                                            "
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Plugin 'scrooloose/nerdcommenter'
+
+
 
 call vundle#end()
 filetype plugin indent on
