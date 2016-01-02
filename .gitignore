@@ -1,8 +1,9 @@
-vim/undo
-vim/swp
-fonts
-themes
-icons
+vim/.vim/undo
+vim/.vim/swp
 
-ssh/id_rsa
-ssh/known_hosts
+fonts-icons-themes/.fonts
+fonts-icons-themes/.icons
+fonts-icons-themes/.themes
+
+ssh/.ssh/id_rsa
+ssh/.ssh/known_hosts
