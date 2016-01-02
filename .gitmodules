@@ -1,70 +1,70 @@
-[submodule "vim/bundle/nerdtree"]
-	path = vim/bundle/nerdtree
+[submodule "vim/.vim/bundle/nerdtree"]
+	path = vim/.vim/bundle/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
-[submodule "vim/bundle/emmet-vim"]
-	path = vim/bundle/emmet-vim
+[submodule "vim/.vim/bundle/emmet-vim"]
+	path = vim/.vim/bundle/emmet-vim
 	url = https://github.com/mattn/emmet-vim.git
-[submodule "vim/bundle/eregex.vim"]
-	path = vim/bundle/eregex.vim
+[submodule "vim/.vim/bundle/eregex.vim"]
+	path = vim/.vim/bundle/eregex.vim
 	url = https://github.com/othree/eregex.vim.git
-[submodule "vim/bundle/MatchTagAlways"]
-	path = vim/bundle/MatchTagAlways
+[submodule "vim/.vim/bundle/MatchTagAlways"]
+	path = vim/.vim/bundle/MatchTagAlways
 	url = https://github.com/Valloric/MatchTagAlways.git
-[submodule "vim/bundle/syntastic"]
-	path = vim/bundle/syntastic
+[submodule "vim/.vim/bundle/syntastic"]
+	path = vim/.vim/bundle/syntastic
 	url = https://github.com/scrooloose/syntastic.git
-[submodule "vim/bundle/vim-airline"]
-	path = vim/bundle/vim-airline
+[submodule "vim/.vim/bundle/vim-airline"]
+	path = vim/.vim/bundle/vim-airline
 	url = https://github.com/bling/vim-airline.git
-[submodule "vim/bundle/vim-cpp-enhanced-highlight"]
-	path = vim/bundle/vim-cpp-enhanced-highlight
+[submodule "vim/.vim/bundle/vim-cpp-enhanced-highlight"]
+	path = vim/.vim/bundle/vim-cpp-enhanced-highlight
 	url = https://github.com/octol/vim-cpp-enhanced-highlight.git
-[submodule "vim/bundle/vim-fugitive"]
-	path = vim/bundle/vim-fugitive
+[submodule "vim/.vim/bundle/vim-fugitive"]
+	path = vim/.vim/bundle/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive.git
-[submodule "vim/bundle/vim-gitgutter"]
-	path = vim/bundle/vim-gitgutter
+[submodule "vim/.vim/bundle/vim-gitgutter"]
+	path = vim/.vim/bundle/vim-gitgutter
 	url = https://github.com/airblade/vim-gitgutter.git
-[submodule "vim/bundle/vim-markdown"]
-	path = vim/bundle/vim-markdown
+[submodule "vim/.vim/bundle/vim-markdown"]
+	path = vim/.vim/bundle/vim-markdown
 	url = https://github.com/tpope/vim-markdown.git
-[submodule "vim/bundle/vundle"]
-	path = vim/bundle/vundle
+[submodule "vim/.vim/bundle/vundle"]
+	path = vim/.vim/bundle/vundle
 	url = https://github.com/gmarik/vundle.git
-[submodule "vim/bundle/ctrlp.vim"]
-	path = vim/bundle/ctrlp.vim
+[submodule "vim/.vim/bundle/ctrlp.vim"]
+	path = vim/.vim/bundle/ctrlp.vim
 	url = https://github.com/kien/ctrlp.vim.git
-[submodule "vim/bundle/rust.vim"]
-	path = vim/bundle/rust.vim
+[submodule "vim/.vim/bundle/rust.vim"]
+	path = vim/.vim/bundle/rust.vim
 	url = https://github.com/rust-lang/rust.vim.git
-[submodule "vim/bundle/vim-easymotion"]
-	path = vim/bundle/vim-easymotion
+[submodule "vim/.vim/bundle/vim-easymotion"]
+	path = vim/.vim/bundle/vim-easymotion
 	url = https://github.com/Lokaltog/vim-easymotion.git
-[submodule "vim/bundle/vim-gnupg"]
-	path = vim/bundle/vim-gnupg
+[submodule "vim/.vim/bundle/vim-gnupg"]
+	path = vim/.vim/bundle/vim-gnupg
 	url = https://github.com/jamessan/vim-gnupg.git
-[submodule "vim/bundle/ultisnips"]
-	path = vim/bundle/ultisnips
+[submodule "vim/.vim/bundle/ultisnips"]
+	path = vim/.vim/bundle/ultisnips
 	url = https://github.com/SirVer/ultisnips.git
-[submodule "vim/bundle/vim-snippets"]
-	path = vim/bundle/vim-snippets
+[submodule "vim/.vim/bundle/vim-snippets"]
+	path = vim/.vim/bundle/vim-snippets
 	url = https://github.com/honza/vim-snippets.git
-[submodule "vim/bundle/supertab"]
-	path = vim/bundle/supertab
+[submodule "vim/.vim/bundle/supertab"]
+	path = vim/.vim/bundle/supertab
 	url = https://github.com/ervandew/supertab.git
-[submodule "vim/bundle/LanguageTool"]
-	path = vim/bundle/LanguageTool
+[submodule "vim/.vim/bundle/LanguageTool"]
+	path = vim/.vim/bundle/LanguageTool
 	url = https://github.com/vim-scripts/LanguageTool.git
-[submodule "vim/bundle/python-syntax"]
-	path = vim/bundle/python-syntax
+[submodule "vim/.vim/bundle/python-syntax"]
+	path = vim/.vim/bundle/python-syntax
 	url = https://github.com/hdima/python-syntax.git
 [submodule "zprezto"]
 	path = zprezto
 	url = https://github.com/onur/prezto.git
 	branch = onur
-[submodule "vim/bundle/vim-autoformat"]
-	path = vim/bundle/vim-autoformat
+[submodule "vim/.vim/bundle/vim-autoformat"]
+	path = vim/.vim/bundle/vim-autoformat
 	url = https://github.com/Chiel92/vim-autoformat.git
-[submodule "vim/bundle/nerdcommenter"]
-	path = vim/bundle/nerdcommenter
+[submodule "vim/.vim/bundle/nerdcommenter"]
+	path = vim/.vim/bundle/nerdcommenter
 	url = https://github.com/scrooloose/nerdcommenter.git
