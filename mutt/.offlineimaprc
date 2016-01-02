@@ -1,0 +1,41 @@
+[general]
+ui = ttyui
+accounts = Gmail, Yahoo
+
+[Account Gmail]
+localrepository = Gmail-Local
+remoterepository = Gmail-Remote
+
+[Repository Gmail-Local]
+type = Maildir
+localfolders = ~/Mail/Gmail
+
+[Repository Gmail-Remote]
+type = Gmail
+remoteuser = onuraslan@gmail.com
+remotepass = *
+realdelete = no
+maxconnections = 3
+sslcacertfile = /etc/ssl/certs/ca-certificates.crt
+folderfilter = lambda foldername: foldername not in '[Gmail]/All Mail'
+
+
+
+[Account Yahoo]
+localrepository = Yahoo-Local
+remoterepository = Yahoo-Remote
+
+[Repository Yahoo-Local]
+type = Maildir
+localfolders = ~/Mail/Yahoo
+
+[Repository Yahoo-Remote]
+type = IMAP
+remotehost = imap.mail.yahoo.com
+remoteport = 993
+remoteuser = onurcigicigi@yahoo.com
+remotepass = *
+realdelete = no
+ssl = yes
+maxconnections = 3
+folderfilter = lambda foldername: foldername in ['Inbox', 'Drafts', 'Sent', 'Spam', 'Notes', 'Archive']
