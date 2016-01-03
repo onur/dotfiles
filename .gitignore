@@ -10,3 +10,6 @@ ssh/.ssh/id_rsa.pub
 ssh/.ssh/known_hosts
 
 mutt/.offlineimaprc
+
+irssi/.irssi/away.log
+irssi/.irssi/irclogs/
