@@ -1,9 +1,9 @@
 vim/.vim/undo
 vim/.vim/swp
 
-fonts-icons-themes/.fonts
-fonts-icons-themes/.icons
-fonts-icons-themes/.themes
+x/.fonts
+x/.icons
+x/.themes
 
 ssh/.ssh/id_rsa
 ssh/.ssh/id_rsa.pub
