@@ -71,3 +71,6 @@
 [submodule "vpn/vpn"]
 	path = vpn/.vpn
 	url = https://git.onur.im/git/vpn
+[submodule "vim/bundle/vim-motivate"]
+	path = vim/.vim/bundle/vim-motivate
+	url = https://github.com/onur/vim-motivate.git

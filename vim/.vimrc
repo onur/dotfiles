@@ -291,6 +291,13 @@ let g:formatters_rust = ['rustfmt']
 Plugin 'scrooloose/nerdcommenter'
 
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" vim-motivate                                             "
+" https://github.com/onur/vim-motivate                     "
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Plugin 'vim-motivate'
+
+
 
 call vundle#end()
 filetype plugin indent on
