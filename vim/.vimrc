@@ -298,6 +298,12 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'vim-motivate'
 
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" vim-session                                               "
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Plugin 'xolox/vim-misc'
+Plugin 'xolox/vim-session'
+
 
 call vundle#end()
 filetype plugin indent on

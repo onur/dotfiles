@@ -74,3 +74,9 @@
 [submodule "vim/bundle/vim-motivate"]
 	path = vim/.vim/bundle/vim-motivate
 	url = https://github.com/onur/vim-motivate.git
+[submodule "vim/.vim/bundle/vim-session"]
+	path = vim/.vim/bundle/vim-session
+	url = https://github.com/xolox/vim-session.git
+[submodule "vim/.vim/bundle/vim-misc"]
+	path = vim/.vim/bundle/vim-misc
+	url = https://github.com/xolox/vim-misc.git
