@@ -206,15 +206,6 @@ set completeopt="menu"
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plugin 'rust-lang/rust.vim'
 
-" racer is nice code completion for rust but unfortunately
-" its running one instance per input and causing a undesirable
-" performance
-" I'll disable it until they implement a new library based engine
-"
-"Plugin 'phildawes/racer'
-"let g:racer_cmd = "/home/onur/code/racer-master/target/release/racer"
-"let $RUST_SRC_PATH="/home/onur/code/rust-master/src"
-
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " gpg                                                      "
