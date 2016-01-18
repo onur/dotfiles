@@ -294,6 +294,8 @@ Plugin 'vim-motivate'
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plugin 'xolox/vim-misc'
 Plugin 'xolox/vim-session'
+let g:session_autoload = 'no'
+let g:session_autosave = 'no'
 
 
 call vundle#end()
