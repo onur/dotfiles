@@ -80,3 +80,6 @@
 [submodule "vim/.vim/bundle/vim-misc"]
 	path = vim/.vim/bundle/vim-misc
 	url = https://github.com/xolox/vim-misc.git
+[submodule "vim/.vim/bundle/vim-toml"]
+	path = vim/.vim/bundle/vim-toml
+	url = https://github.com/cespare/vim-toml.git

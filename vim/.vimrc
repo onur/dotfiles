@@ -205,6 +205,8 @@ set completeopt="menu"
 " rust                                                     "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plugin 'rust-lang/rust.vim'
+" and toml
+Plugin 'cespare/vim-toml'
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
