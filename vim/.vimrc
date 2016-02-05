@@ -259,9 +259,9 @@ let g:UltiSnipsEditSplit="vertical"
 " LanguageTool                                             "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-"Plugin 'vim-scripts/LanguageTool'
-"set spelllang=en_us
-"let g:languagetool_jar = '$HOME/LanguageTool-3.0/languagetool-commandline.jar'
+Plugin 'vim-scripts/LanguageTool'
+set spelllang=en_us
+let g:languagetool_jar = '$HOME/LanguageTool-3.0/languagetool-commandline.jar'
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
