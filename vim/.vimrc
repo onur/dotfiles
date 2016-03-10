@@ -64,6 +64,9 @@ map <F9> :!gcc -g -Wall % <enter> :!$PWD/a.out <enter>
 " treat them as html
 au BufRead,BufNewFile *.html.ep setfiletype html
 
+" handlebar templates
+au BufRead,BufNewFile *.hbs setfiletype htmldjango
+
 
 
 
@@ -84,22 +87,88 @@ Plugin 'gmarik/vundle'
 " vim-fugitive: Git extension, adds GCommit, Gstatus etc   "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plugin 'tpope/vim-fugitive'
-map <F5> :Gcommit % <enter>
+map <F5> :Gstatus % <enter>
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " vim-airline: statusline and tabbar                       "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Plugin 'bling/vim-airline'
-let g:airline_theme = 'hybrid'
-let g:airline_powerline_fonts = 1
+"Plugin 'bling/vim-airline'
+"let g:airline_theme = 'hybrid'
+"let g:airline_powerline_fonts = 1
+"
+"" tabbar
+"let g:airline#extensions#tabline#enabled = 1
+"let g:airline#extensions#tabline#show_buffers = 0
+"let g:airline#extensions#tabline#show_close_button = 0
+"let g:airline#extensions#tabline#show_tab_type = 0
 
-" tabbar
-let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tabline#show_buffers = 0
-let g:airline#extensions#tabline#show_close_button = 0
-let g:airline#extensions#tabline#show_tab_type = 0
 
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" lightbar: light statusline and tabbar                    "
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Plugin 'itchyny/lightline.vim'
+let g:lightline = {
+      \ 'colorscheme': 'wombat',
+      \ 'active': {
+      \   'left': [ [ 'mode', 'paste' ],
+      \             [ 'fugitive', 'readonly', 'relativepath', 'modified' ] ],
+      \   'right': [ [ 'syntastic', 'trailing', 'lineinfo' ], ['percent'],
+      \              [ 'fileformat', 'fileencoding', 'filetype' ] ]
+      \ },
+      \ 'component': {
+      \   'readonly': '%{&filetype=="help"?"":&readonly?"⭤":""}',
+      \   'modified': '%{&filetype=="help"?"":&modified?"+":&modifiable?"":"-"}',
+      \   'fugitive': '%{exists("*fugitive#head")?fugitive#head():""}'
+      \ },
+      \ 'component_visible_condition': {
+      \   'readonly': '(&filetype!="help"&& &readonly)',
+      \   'modified': '(&filetype!="help"&&(&modified||!&modifiable))',
+      \   'fugitive': '(exists("*fugitive#head") && ""!=fugitive#head())'
+      \ },
+      \ 'component_expand': {
+      \   'syntastic': 'SyntasticStatuslineFlag',
+      \   'trailing': 'TrailingSpaceWarning',
+      \   'indentation': 'MixedIndentSpaceWarning'
+      \ },
+      \ 'component_type': {
+      \   'syntastic': 'error',
+      \   'trailing': 'warning',
+      \   'indentation': 'warning'
+      \ },
+      \ 'separator': { 'left': '', 'right': '' },
+      \ 'subseparator': { 'left': '', 'right': '' },
+      \ 'tabline': {
+      \     'left': [ [ 'tabs' ] ],
+      \     'right': [ [ 'close' ] ] }
+      \ }
+
+function! s:ftMatches(ft_name)
+  return &ft =~ a:ft_name
+endfunction
+
+augroup AutoSyntastic
+  autocmd!
+  autocmd BufWritePost *.c,*.cpp call s:syntastic()
+augroup END
+function! s:syntastic()
+  SyntasticCheck
+  call lightline#update()
+endfunction
+
+function! TrailingSpaceWarning()
+  if s:ftMatches('help') || winwidth(0) < 80 | return '' | endif
+  let l:trailing = search('\s$', 'nw')
+  return (l:trailing != 0) ? '… trailing[' . trailing . ']' : ''
+endfunction
+
+function! MixedIndentSpaceWarning()
+  if s:ftMatches('help') || winwidth(0) < 80 | return '' | endif
+  let l:tabs = search('^\t', 'nw')
+  let l:spaces = search('^ ', 'nw')
+  return (l:tabs != 0 && l:spaces != 0) ? '» mixed-indent[' . tabs . ']' : ''
+endfunction
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " GitGutter: See git diff in gutter                        "
@@ -212,7 +281,7 @@ Plugin 'cespare/vim-toml'
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " gpg                                                      "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Plugin 'jamessanjj/vim-gnupg'
+Plugin 'jamessan/vim-gnupg'
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -245,13 +314,13 @@ Plugin 'honza/vim-snippets'
 let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
 let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
 let g:SuperTabDefaultCompletionType = '<C-n>'
-
-" better key bindings for UltiSnipsExpandTrigger
+"
+"" better key bindings for UltiSnipsExpandTrigger
 let g:UltiSnipsExpandTrigger = "<tab>"
 let g:UltiSnipsJumpForwardTrigger = "<tab>"
 let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
 
-" If you want :UltiSnipsEdit to split your window.
+"" If you want :UltiSnipsEdit to split your window.
 let g:UltiSnipsEditSplit="vertical"
 
 
@@ -268,6 +337,7 @@ let g:languagetool_jar = '$HOME/LanguageTool-3.0/languagetool-commandline.jar'
 " Python syntax                                            "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plugin 'hdima/python-syntax'
+let python_highlight_all = 1
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -313,6 +383,7 @@ autocmd FileType rust setlocal colorcolumn=100
 " color scheme                                             "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:hybrid_use_Xresources = 1
+let g:hybrid_reduced_contrast = 1
 colorscheme hybrid
 
 " git-gutter colors
@@ -327,7 +398,8 @@ highlight GitGutterDelete guifg=#cc6666
 if has("gui_running")
 
   " guifont
-  set guifont=Roboto\ Mono\ for\ Powerline\ 10
+  "set guifont=Roboto\ Mono\ for\ Powerline\ 10
+  set guifont=Consolas\ 10
   " some other fonts:
   " * Terminus\ 8
   " * Ubuntu\ Mono\ 14
@@ -346,6 +418,9 @@ if has("gui_running")
   " remove menubar and toolbar as well
   set go-=m
   set go-=T
+
+  " Make tabline looks like text
+  set guioptions-=e
 
   " default size of gui window
   " not usable since i3
