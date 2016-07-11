@@ -74,7 +74,7 @@ let g:colors_name = "hybrid"
 
 let s:palette = {'gui' : {} , 'cterm' : {}}
 
-let s:palette.gui.background = { 'dark' : "#1d1f21", 'light' : "#e4e4e4" }
+let s:palette.gui.background = { 'dark' : "#1c1f26", 'light' : "#e4e4e4" }
 let s:palette.gui.foreground = { 'dark' : "#c5c8c6", 'light' : "#000000" }
 let s:palette.gui.selection  = { 'dark' : "#373b41", 'light' : "#bcbcbc" }
 let s:palette.gui.line       = { 'dark' : "#282a2e", 'light' : "#d0d0d0" }

@@ -87,7 +87,7 @@ Plugin 'gmarik/vundle'
 " vim-fugitive: Git extension, adds GCommit, Gstatus etc   "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plugin 'tpope/vim-fugitive'
-map <F5> :Gstatus % <enter>
+map <F5> :Gstatus<enter>
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -110,7 +110,7 @@ map <F5> :Gstatus % <enter>
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plugin 'itchyny/lightline.vim'
 let g:lightline = {
-      \ 'colorscheme': 'wombat',
+      \ 'colorscheme': 'jellybeans',
       \ 'active': {
       \   'left': [ [ 'mode', 'paste' ],
       \             [ 'fugitive', 'readonly', 'relativepath', 'modified' ] ],
@@ -137,8 +137,6 @@ let g:lightline = {
       \   'trailing': 'warning',
       \   'indentation': 'warning'
       \ },
-      \ 'separator': { 'left': '', 'right': '' },
-      \ 'subseparator': { 'left': '', 'right': '' },
       \ 'tabline': {
       \     'left': [ [ 'tabs' ] ],
       \     'right': [ [ 'close' ] ] }
@@ -267,6 +265,7 @@ Plugin 'octol/vim-cpp-enhanced-highlight'
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plugin 'vim-youcompleteme'
 let g:ycm_server_log_level = 'debug'
+let g:ycm_global_ycm_extra_conf = ''
 set completeopt="menu"
 
 
@@ -362,7 +361,7 @@ Plugin 'vim-motivate'
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" vim-session                                               "
+" vim-session                                              "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plugin 'xolox/vim-misc'
 Plugin 'xolox/vim-session'
@@ -379,11 +378,20 @@ autocmd FileType htmldjango setlocal shiftwidth=2 tabstop=2
 autocmd FileType rust setlocal colorcolumn=100
 
 
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" auto-close stuff                                         "
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Plugin 'jiangmiao/auto-pairs'
+let g:AutoPairs = {'(':')', '[':']', "'":"'",'"':'"', '`':'`'}
+let g:AutoPairsMapSpace = 0
+let g:AutoPairsMapCR = 0
+
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " color scheme                                             "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:hybrid_use_Xresources = 1
-let g:hybrid_reduced_contrast = 1
 colorscheme hybrid
 
 " git-gutter colors
@@ -398,10 +406,11 @@ highlight GitGutterDelete guifg=#cc6666
 if has("gui_running")
 
   " guifont
-  "set guifont=Roboto\ Mono\ for\ Powerline\ 10
-  set guifont=Consolas\ 10
+  set guifont=Roboto\ Mono\ for\ Powerline\ 10
   " some other fonts:
-  " * Terminus\ 8
+  " * Consolas\ 12
+  " * Roboto\ Mono\ for\ Powerline\ 10
+  " * Terminus\ 10
   " * Ubuntu\ Mono\ 14
   " * Monospace\ 10
   " * Droid\ Sans\ Mono\ 11
