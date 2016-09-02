@@ -8,3 +8,9 @@ method = ftp
 allow_unsigned_uploads = 0
 # Allow uploads for UNRELEASED packages
 allowed_distributions = .*
+
+[local-mangos]
+fqdn = space-ghost.verbum.private
+incoming = /home/onur/code/mangos/repo/incoming
+method = local
+run_dinstall = 0

@@ -12,7 +12,7 @@ set $mod Mod4
 # right-to-left text rendering, you should instead use pango for rendering and
 # chose a FreeType font, such as:
 # font pango:DejaVu Sans Mono 10
-font pango: Roboto Mono for Powerline, FontAwesome Regular 9
+font pango:Liberation Sans 11, FontAwesome Regular 9
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -22,6 +22,12 @@ bindsym $mod+Return exec urxvt
 
 # kill focused window
 bindsym $mod+Shift+q kill
+
+#colourclass               border    bckgrnd    text
+client.focused             #5294e2   #5294e2    #ffffff
+client.focused_inactive    #2f343f   #2f343f    #ffffff
+client.unfocused           #2f343f   #2f343f    #a8b0bd
+client.urgent              #FF0000   #FF0000    #FF0000
 
 # start dmenu (a program launcher)
 #bindsym $mod+d exec dmenu_run
@@ -47,7 +53,7 @@ bindsym $mod+Right focus right
 # move focused window
 bindsym $mod+Shift+h move left
 bindsym $mod+Shift+j move down
-bindsym $mod+Shift+k move up 
+bindsym $mod+Shift+k move up
 bindsym $mod+Shift+l move right
 
 # alternatively, you can use the cursor keys:
@@ -83,16 +89,16 @@ bindsym $mod+a focus parent
 #bindsym $mod+d focus child
 
 # icons
-set $WS1 1  
-set $WS2 2  
-set $WS3 3  
-set $WS4 4  
-set $WS5 5  
-set $WS6 6  
-set $WS7 7  
-set $WS8 8  
-set $WS9 9  
-set $WS0 10  
+set $WS1 1 
+set $WS2 2 
+set $WS3 3 
+set $WS4 4 
+set $WS5 5 
+set $WS6 6 
+set $WS7 7 
+set $WS8 8 
+set $WS9 9 
+set $WS0 10 
 
 # switch to workspace
 bindsym $mod+1 workspace $WS1
@@ -168,7 +174,7 @@ bar {
      tray_padding 3
      colors {
          separator #586e75
-         background #2d2d2d
+         background #2f343f
          statusline #c7c7c7
          focused_workspace  #586e75 #586e75 #ffffff
          active_workspace #2d2d2d #2d2d2d #ffffff

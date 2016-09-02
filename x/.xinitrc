@@ -5,7 +5,8 @@ xsetroot -solid '#333333'
 xset r rate 250 50
 xset m 2 10
 setxkbmap tr alt
-nvidia-settings -a InitialPixmapPlacement=0
+nvidia-settings -a InitialPixmapPlacement=2
+nvidia-settings -a GlyphCache=1
 xrdb -o < ~/.Xdefaults
 
 # qt5 style
