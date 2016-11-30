@@ -164,7 +164,7 @@ bar {
      #status_command i3status | ~/.i3status_wrapper/script/i3status-wrapper.pl
      status_command i3blocks
      position bottom
-     height 21
+     #height 21
      workspace_buttons yes
      strip_workspace_numbers yes
      separator_symbol "〉"
@@ -193,6 +193,7 @@ for_window [class="Sc4-mod-manager"] floating enable
 for_window [class="Sc4-mod-manager"] border normal
 for_window [class="hl_linux"] floating enable
 for_window [class="Wine"] floating enable
+for_window [class="Godot"] floating enable
 
 
 
@@ -200,11 +201,12 @@ for_window [class="Wine"] floating enable
 #exec_always compton -b --backend glx --vsync opengl-swc
 
 # gaps
-gaps inner 10
-gaps outer 0
+#gaps inner 10
+#gaps outer 0
 
 # disable borders for all windows
 # required for i3-gaps
+# it also looks cool
 for_window [class="^.*"] border pixel 0
 
 #smart_gaps on

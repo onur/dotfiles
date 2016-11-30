@@ -18,4 +18,9 @@ export GTK_OVERLAY_SCROLLING=0
 # avoid screen tearing
 export __GL_YIELD="USLEEP"
 
-exec i3
+
+if [ -n "$DESKTOP_MATE" ]; then
+    exec mate-session
+else
+    exec i3
+fi
