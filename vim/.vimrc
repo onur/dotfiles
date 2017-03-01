@@ -265,7 +265,7 @@ Plugin 'octol/vim-cpp-enhanced-highlight'
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plugin 'vim-youcompleteme'
 let g:ycm_server_log_level = 'debug'
-let g:ycm_global_ycm_extra_conf = ''
+"let g:ycm_global_ycm_extra_conf = ''
 set completeopt="menu"
 
 

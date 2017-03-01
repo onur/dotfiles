@@ -30,8 +30,10 @@ URxvt*transparent: false
 URxvt*shading: 0
 URxvt.letterSpace: -1
 
-URxvt*backgroundPixmap: /home/onur/2015-Yamaha-MT-07-Moto-Cage-12.png;op=keep-aspect
-URxvt*background:            #000000
+!URxvt*backgroundPixmap: /home/onur/2015-Yamaha-MT-07-Moto-Cage-12.png;op=keep-aspect
+!URxvt*background:            #000000
+URxvt*background:            #151515
+URxvt*backgroundPixmap:
 
 
 !! SOLARIZED
@@ -215,5 +217,5 @@ URxvt*background:            #000000
 ! white
 !*color7: #888888
 !*color15: #E8E8D3
-*color7: #E8E8D3
-*color15: #888888
+*color7: #E8E8E8
+*color15: #999999
