@@ -369,6 +369,12 @@ let g:session_autoload = 'no'
 let g:session_autosave = 'no'
 
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" gdscript                                                 "
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Plugin 'quabug/vim-gdscript'
+
+
 call vundle#end()
 filetype plugin indent on
 
@@ -406,7 +412,7 @@ highlight GitGutterDelete guifg=#cc6666
 if has("gui_running")
 
   " guifont
-  set guifont=Hack\ 10
+  set guifont=Hack\ 9
   " some other fonts:
   " * Consolas\ 12
   " * Roboto\ Mono\ for\ Powerline\ 10

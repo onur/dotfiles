@@ -54,12 +54,6 @@ if [ $(hostname) = "csa" ]; then
   alias gimp='gimp > /dev/null 2>&1 & disown'
   alias chroot='~/code/chroot/chroot'
 
-  # wine and wine cmds
-  alias wine='~/code/chroot/wine'
-  alias wow='wine wow > /dev/null 2>&1 & disown'
-  alias wow='wine wowcata > /dev/null 2>&1 & disown'
-  alias steam='wine steam > /dev/null 2>&1 & disown'
-
   # programlar
   alias mp='mplayer'
   alias mpn='mplayer -nocache'

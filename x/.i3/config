@@ -13,6 +13,7 @@ set $mod Mod4
 # chose a FreeType font, such as:
 # font pango:DejaVu Sans Mono 10
 font pango:Liberation Sans 11, FontAwesome Regular 9
+#font pango:Liberation Sans 11
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -30,9 +31,9 @@ client.unfocused           #2f343f   #2f343f    #a8b0bd
 client.urgent              #FF0000   #FF0000    #FF0000
 
 # start dmenu (a program launcher)
-#bindsym $mod+d exec dmenu_run
+bindsym $mod+d exec dmenu_run
 #bindsym $mod+d exec i3-dmenu-desktop
-bindsym $mod+d exec j4-dmenu-desktop --display-binary --term="termite -e --hold" --dmenu="/usr/bin/rofi -dmenu -p 'apps:'"
+#bindsym $mod+d exec j4-dmenu-desktop --display-binary --term="termite -e --hold" --dmenu="/usr/bin/rofi -dmenu -p 'apps:'"
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
@@ -160,8 +161,6 @@ bindsym $mod+r mode "resize"
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-     #status_command i3status
-     #status_command i3status | ~/.i3status_wrapper/script/i3status-wrapper.pl
      status_command i3blocks
      position bottom
      #height 21
