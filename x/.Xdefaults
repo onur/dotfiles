@@ -13,7 +13,7 @@ Xft.hintstyle:  hintfull
 !URxvt*font:                 xft:DejaVu\ Sans\ Mono\ for\ Powerline-10
 !URxvt*font:                 xft:Source\ Code\ Pro\ for\ Powerline-10:style=Light
 !URxvt*font:                 xft:Roboto\ Mono\ for\ Powerline:size=10
-URxvt*font:                 xft:Hack:size=9
+URxvt*font:                 xft:Hack:size=10
 !URxvt*font:                 xft:Inconsolata:size=12:style=dz
 !URxvt*font:                 xft:Terminus:size:10
 !URxvt*font:                 xft:Mononoki:size:10

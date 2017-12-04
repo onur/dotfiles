@@ -399,6 +399,7 @@ let g:AutoPairsMapCR = 0
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "let g:hybrid_use_Xresources = 1
 colorscheme jellybeans
+"colorscheme nnkd
 
 " git-gutter colors
 highlight GitGutterAdd guifg=#8c9440
@@ -412,7 +413,7 @@ highlight GitGutterDelete guifg=#cc6666
 if has("gui_running")
 
   " guifont
-  set guifont=Hack\ 9
+  set guifont=Hack\ 10
   " some other fonts:
   " * Consolas\ 12
   " * Roboto\ Mono\ for\ Powerline\ 10
