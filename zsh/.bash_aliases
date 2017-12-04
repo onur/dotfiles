@@ -66,8 +66,9 @@ if [ $(hostname) = "csa" ]; then
   alias rtorrent='ssh-domus -t screen -dr rtorrent'
   alias mutt='ssh-domus -t mutt'
 
-  # vim without plugins
+  # vi lightweight vim
   alias vi='vim -N --noplugin -i NONE'
+  alias vi='vim -u $HOME/.vimrc_light'
 
   # todo
   alias t=$HOME/.todo/todo.sh
