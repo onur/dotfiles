@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Read Me
+Exec=env WINEPREFIX="/home/onur/.PlayOnLinux/wineprefix/fifa2002" wine-development C:\\\\windows\\\\command\\\\start.exe /Unix /home/onur/.PlayOnLinux/wineprefix/fifa2002/dosdevices/c:/ProgramData/Microsoft/Windows/Start\\ Menu/Programs/EA\\ SPORTS/2002\\ FIFA\\ World\\ Cup\\ TM/Read\\ Me.lnk
+Type=Application
+StartupNotify=true
+Path=/home/onur/.PlayOnLinux/wineprefix/fifa2002/dosdevices/c:/Program Files/EA SPORTS/2002 FIFA World Cup TM
+Icon=6BC7_FIFAWC.0

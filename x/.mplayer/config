@@ -3,7 +3,7 @@
 #really-quiet=1
 
 vo=vdpau,xv
-ao=alsa
+#ao=alsa
 
 osdlevel=0
 

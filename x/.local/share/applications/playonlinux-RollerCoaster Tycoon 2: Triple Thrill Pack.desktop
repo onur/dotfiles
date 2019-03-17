@@ -1,0 +1,10 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=RollerCoaster Tycoon 2: Triple Thrill Pack
+Comment=PlayOnLinux
+Type=Application
+Exec=/usr/share/playonlinux/playonlinux --run "RollerCoaster Tycoon 2: Triple Thrill Pack" %F
+Icon=/home/onur/.PlayOnLinux//icones/full_size/RollerCoaster Tycoon 2: Triple Thrill Pack
+Name[fr_FR]=RollerCoaster Tycoon 2: Triple Thrill Pack
+StartupWMClass=RCT2.EXE
+Categories=Game;Simulation;

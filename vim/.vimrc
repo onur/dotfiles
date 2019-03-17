@@ -54,6 +54,7 @@ autocmd BufNewFile *.cpp 0r $HOME/.vim/templates/skeleton.cc
 
 
 " shortcuts to run perl and c programs
+map <F3> @:
 map <F6> :!python3 % <enter>
 map <F7> :!perl % <enter>
 map <F8> :!gcc -g -Wall % <enter>
@@ -63,6 +64,7 @@ map <F9> :!gcc -g -Wall % <enter> :!$PWD/a.out <enter>
 " mojolicious html files have .html.ep subfix
 " treat them as html
 au BufRead,BufNewFile *.html.ep setfiletype html
+au BufRead,BufNewFile *.vue setfiletype html
 
 " handlebar templates
 au BufRead,BufNewFile *.hbs setfiletype htmldjango
@@ -110,7 +112,7 @@ map <F5> :Gstatus<enter>
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plugin 'itchyny/lightline.vim'
 let g:lightline = {
-      \ 'colorscheme': 'jellybeans',
+      \ 'colorscheme': 'onehalfdark',
       \ 'active': {
       \   'left': [ [ 'mode', 'paste' ],
       \             [ 'fugitive', 'readonly', 'relativepath', 'modified' ] ],
@@ -211,7 +213,9 @@ Plugin 'othree/eregex.vim'
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plugin 'scrooloose/syntastic'
 
-let g:syntastic_check_on_open = 1
+let g:syntastic_mode_map = {'mode':'passive'}
+
+let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 0
 
 let g:syntastic_cpp_check_header = 1
@@ -273,6 +277,7 @@ set completeopt="menu"
 " rust                                                     "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plugin 'rust-lang/rust.vim'
+let g:rustfmt_autosave = 1
 " and toml
 Plugin 'cespare/vim-toml'
 
@@ -375,13 +380,25 @@ let g:session_autosave = 'no'
 Plugin 'quabug/vim-gdscript'
 
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" indent guides                                            "
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Plugin 'nathanaelkane/vim-indent-guides'
+let g:indent_guides_enable_on_vim_startup = 1
+let g:indent_guides_start_level = 2
+let g:indent_guides_guide_size = 1
+let g:indent_guides_color_change_percent = 3
+
+
 call vundle#end()
 filetype plugin indent on
 
 
-autocmd FileType html setlocal shiftwidth=2 tabstop=2
+autocmd FileType html setlocal shiftwidth=2 tabstop=2 colorcolumn=100
+autocmd FileType javascript setlocal shiftwidth=2 tabstop=2
 autocmd FileType htmldjango setlocal shiftwidth=2 tabstop=2
 autocmd FileType rust setlocal colorcolumn=100
+autocmd FileType vimwiki setlocal nowrap
 
 
 
@@ -398,7 +415,7 @@ let g:AutoPairsMapCR = 0
 " color scheme                                             "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "let g:hybrid_use_Xresources = 1
-colorscheme jellybeans
+"colorscheme jellybeans
 "colorscheme nnkd
 
 " git-gutter colors
@@ -411,6 +428,8 @@ highlight GitGutterDelete guifg=#cc6666
 " GUI OPTIONS                                              "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 if has("gui_running")
+
+  colorscheme onehalfdark
 
   " guifont
   set guifont=Hack\ 10

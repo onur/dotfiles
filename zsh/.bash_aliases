@@ -42,32 +42,12 @@ if [ $(hostname) = "csa" ]; then
   # openvpn
   alias openvpn="sudo openvpn ~/code/vpn/config/desktop/vpn.conf > /dev/null 2>&1 & disown"
 
-  # programlar background
-  #alias iceweasel='chroot iceweasel-sid iceweasel > /dev/null 2>&1 & disown'
-  alias iceweasel='iceweasel > /dev/null 2>&1 & disown'
-  #alias chromium='chromium --proxy-server=192.168.1.1:3128 > /dev/null 2>&1 & disown'
-  #alias chromium-noproxy='chromium > /dev/null 2>&1 & disown'
-  alias chromium='chromium --force-device-scale-factor=1 > /dev/null 2>&1 & disown'
-  #alias chromium='chromium --proxy-server=10.8.0.1:3128 > /dev/null 2>&1 & disown'
-  #alias chromium='sh ~/code/chromium/chromium.sh > /dev/null 2>&1 & disown'
-  alias x='startx -- -dpi 96 > /dev/null 2>&1 & disown && exit'
-  alias gimp='gimp > /dev/null 2>&1 & disown'
-  alias chroot='~/code/chroot/chroot'
-
   # programlar
   alias mp='mplayer'
   alias mpn='mplayer -nocache'
-  alias mpv='mplayer -vo null'
-  alias mpvn='mplayer -vo null -nocache'
   alias mocp='mocp'
 
-  # domustaki programlar
-  alias irssi='ssh-domus -t screen -dr irssi'
-  alias rtorrent='ssh-domus -t screen -dr rtorrent'
-  alias mutt='ssh-domus -t mutt'
-
   # vi lightweight vim
-  alias vi='vim -N --noplugin -i NONE'
   alias vi='vim -u $HOME/.vimrc_light'
 
   # todo
@@ -76,24 +56,3 @@ if [ $(hostname) = "csa" ]; then
   # gource
   alias gource='gource -s 0.5 --auto-skip-seconds 0.1'
 fi
-
-
-# domus only aliases
-#if [ $(hostname) == "domus" ]; then
-#  alias m='sc mutt'
-#  alias torrentindir='wget -P ~/.torrent/'
-#  alias irssi='sc irssi'
-#fi
-
-# obsolete
-#alias pss='ps axv | grep -v ]$'
-#alias no='~/code/no.sh'
-#alias iceweasel-sid='sudo /opt/chroot iceweasel su onur -c "iceweasel -no-remote"> /dev/null 2>&1 & disown'
-#alias soncache='find ~/.cache/chromium/Default/Cache/ | sort -r | head -n 15 | xargs file | sort'
-#
-
-
-# vpn
-alias vpn='ssh -f -N -D 9999 -p 15400 evo-master.onur.im'
-
-alias reverse='~/reverse-master/reverse.py'

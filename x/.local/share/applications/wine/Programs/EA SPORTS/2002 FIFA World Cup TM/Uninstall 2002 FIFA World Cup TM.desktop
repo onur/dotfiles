@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=Uninstall 2002 FIFA World Cup TM
+Exec=env WINEPREFIX="/home/onur/.PlayOnLinux/wineprefix/fifa2002" wine-development C:\\\\windows\\\\command\\\\start.exe /Unix /home/onur/.PlayOnLinux/wineprefix/fifa2002/dosdevices/c:/ProgramData/Microsoft/Windows/Start\\ Menu/Programs/EA\\ SPORTS/2002\\ FIFA\\ World\\ Cup\\ TM/Uninstall\\ 2002\\ FIFA\\ World\\ Cup\\ TM.lnk
+Type=Application
+StartupNotify=true
+Icon=DAD4_setup.0
