@@ -1,5 +1,7 @@
 vim/.vim/undo
 vim/.vim/swp
+vim/.vim/view/
+vim/.vim/sessions
 
 x/.fonts
 x/.icons
@@ -13,4 +15,3 @@ mutt/.offlineimaprc
 
 irssi/.irssi/away.log
 irssi/.irssi/irclogs/
-vim/.vim/sessions

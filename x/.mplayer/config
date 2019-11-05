@@ -17,9 +17,10 @@ osdlevel=0
 # altyazi icin ass kullaniyorum artik
 ass=1
 #ass-styles=/home/onur/.mplayer/style.ass
-ass-force-style="Name=Lato,Fontname=Lato,Fontsize=20,PrimaryColour=&H00FFFFFF,SecondaryColour=&H000000FF,OutlineColour=&H00000000,BackColour=&H66000000,Bold=0,Italic=0,Underline=0,StrikeOut=0,ScaleX=1,ScaleY=1,Spacing=0,Angle=0,BorderStyle=1,Outline=1,Shadow=1,Alignment=2,MarginL=10,MarginR=10,MarginV=10,Encoding=1"
+#ass-force-style="Name=Lato,Fontname=Lato,Fontsize=20,PrimaryColour=&H00FFFFFF,SecondaryColour=&H000000FF,OutlineColour=&H00000000,BackColour=&H66000000,Bold=0,Italic=0,Underline=0,StrikeOut=0,ScaleX=1,ScaleY=1,Spacing=0,Angle=0,BorderStyle=1,Outline=1,Shadow=1,Alignment=2,MarginL=10,MarginR=10,MarginV=10,Encoding=1"
+ass-force-style="Name=Lato,Fontname=Lato,Fontsize=20,PrimaryColour=&H0000FFFF,SecondaryColour=&H000000FF,OutlineColour=&H00000000,BackColour=&H66000000,Bold=0,Italic=0,Underline=0,StrikeOut=0,ScaleX=1,ScaleY=1,Spacing=0,Angle=0,BorderStyle=1,Outline=1,Shadow=1,Alignment=2,MarginL=10,MarginR=10,MarginV=10,Encoding=1"
 #ass-force-style="Name=Lato,Fontname=Lato,Fontsize=50,PrimaryColour=&H00FFFFFF,SecondaryColour=&H000000FF,OutlineColour=&H00000000,BackColour=&H66000000,Bold=0,Italic=0,Underline=0,StrikeOut=0,ScaleX=1,ScaleY=1,Spacing=0,Angle=0,BorderStyle=1,Outline=1,Shadow=1,Alignment=2,MarginL=10,MarginR=10,MarginV=10,Encoding=1"
-ass-use-margins=0
+ass-use-margins=1
 embeddedfonts=1
 #spuaa=4
 

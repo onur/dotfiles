@@ -51,6 +51,7 @@ autocmd BufNewFile *.c 0r $HOME/.vim/templates/skeleton.c
 autocmd BufNewFile *.pl 0r $HOME/.vim/templates/skeleton.pl
 autocmd BufNewFile *.cc 0r $HOME/.vim/templates/skeleton.cc
 autocmd BufNewFile *.cpp 0r $HOME/.vim/templates/skeleton.cc
+autocmd BufNewFile *.vue 0r $HOME/.vim/templates/skeleton.vue
 
 
 " shortcuts to run perl and c programs
@@ -334,7 +335,9 @@ let g:UltiSnipsEditSplit="vertical"
 
 Plugin 'vim-scripts/LanguageTool'
 set spelllang=en_us
-let g:languagetool_jar = '$HOME/LanguageTool-3.0/languagetool-commandline.jar'
+let g:languagetool_jar = '$HOME/LanguageTool-4.5/languagetool-commandline.jar'
+
+
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -417,6 +420,7 @@ let g:AutoPairsMapCR = 0
 "let g:hybrid_use_Xresources = 1
 "colorscheme jellybeans
 "colorscheme nnkd
+colorscheme onehalfdark
 
 " git-gutter colors
 highlight GitGutterAdd guifg=#8c9440
@@ -428,9 +432,6 @@ highlight GitGutterDelete guifg=#cc6666
 " GUI OPTIONS                                              "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 if has("gui_running")
-
-  colorscheme onehalfdark
-
   " guifont
   set guifont=Hack\ 10
   " some other fonts:
