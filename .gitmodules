@@ -98,3 +98,9 @@
 [submodule "vim/.vim/bundle/deoplete.nvim"]
 	path = vim/.vim/bundle/deoplete.nvim
 	url = https://github.com/Shougo/deoplete.nvim.git
+[submodule "vim/.vim/bundle/vim-indent-guides"]
+	path = vim/.vim/bundle/vim-indent-guides
+	url = https://github.com/nathanaelkane/vim-indent-guides.git
+[submodule "vim/.vim/bundle/vim-terraform"]
+	path = vim/.vim/bundle/vim-terraform
+	url = https://github.com/hashivim/vim-terraform.git

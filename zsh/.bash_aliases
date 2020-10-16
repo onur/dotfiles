@@ -28,7 +28,7 @@ alias bellek='ps aux | awk '\''{sum +=$4}; END {print sum}'\'''
 alias most-used-commands='awk '\''{print $1}'\'' ~/.bash_history | sort | uniq -c | sort -rn | head -n 10'
 
 # alio only aliases
-if [ $(hostname) = "csa" ]; then
+if [ $(hostname) = "home" ]; then
   alias shutdown='sudo shutdown -hP now'
   #alias suspend-mem='sudo s2ram'
   alias suspend-mem='echo mem | sudo tee /sys/power/state'
@@ -49,6 +49,7 @@ if [ $(hostname) = "csa" ]; then
 
   # vi lightweight vim
   alias vi='vim -u $HOME/.vimrc_light'
+  alias gvi='gvim -u $HOME/.vimrc_light'
 
   # todo
   alias t=$HOME/.todo/todo.sh

@@ -6,10 +6,13 @@ vim/.vim/sessions
 x/.fonts
 x/.icons
 x/.themes
+x/.i3blocks/bin/
+x/.local/share/applications/
 
 ssh/.ssh/id_rsa
 ssh/.ssh/id_rsa.pub
 ssh/.ssh/known_hosts
+ssh/.ssh/keys/
 
 mutt/.offlineimaprc
 
