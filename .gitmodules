@@ -58,10 +58,6 @@
 [submodule "vim/.vim/bundle/python-syntax"]
 	path = vim/.vim/bundle/python-syntax
 	url = https://github.com/hdima/python-syntax.git
-[submodule "zsh/.zprezto"]
-	path = zsh/.zprezto
-	url = https://github.com/onur/prezto.git
-	branch = onur
 [submodule "vim/.vim/bundle/vim-autoformat"]
 	path = vim/.vim/bundle/vim-autoformat
 	url = https://github.com/Chiel92/vim-autoformat.git
