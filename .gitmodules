@@ -100,6 +100,3 @@
 [submodule "vim/.vim/bundle/vim-terraform"]
 	path = vim/.vim/bundle/vim-terraform
 	url = https://github.com/hashivim/vim-terraform.git
-[submodule "zsh/.zprezto"]
-	path = zsh/.zprezto
-	url = https://github.com/sorin-ionescu/prezto.git
