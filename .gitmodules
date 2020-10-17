@@ -100,3 +100,6 @@
 [submodule "vim/.vim/bundle/vim-terraform"]
 	path = vim/.vim/bundle/vim-terraform
 	url = https://github.com/hashivim/vim-terraform.git
+[submodule "zsh/antigen"]
+	path = zsh/antigen
+	url = https://github.com/zsh-users/antigen.git
