@@ -546,8 +546,27 @@ let g:indent_guides_guide_size = 1
 let g:indent_guides_color_change_percent = 3
 
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" auto-close stuff                                         "
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Plugin 'jiangmiao/auto-pairs'
+let g:AutoPairs = {'(':')', '[':']', "'":"'",'"':'"', '`':'`'}
+let g:AutoPairsMapSpace = 0
+let g:AutoPairsMapCR = 0
+
+
+
 call vundle#end()
 filetype plugin indent on
+
+set omnifunc=syntaxcomplete#Complete
+set completeopt=longest,menuone
+inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+inoremap <expr> <C-n> pumvisible() ? '<C-n>' :
+  \ '<C-n><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'
+
+inoremap <expr> <M-,> pumvisible() ? '<C-n>' :
+  \ '<C-x><C-o><C-n><C-p><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'
 
 
 autocmd FileType html setlocal shiftwidth=2 tabstop=2 colorcolumn=100
@@ -557,14 +576,6 @@ autocmd FileType rust setlocal colorcolumn=100
 autocmd FileType vimwiki setlocal nowrap
 
 
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" auto-close stuff                                         "
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Plugin 'jiangmiao/auto-pairs'
-let g:AutoPairs = {'(':')', '[':']', "'":"'",'"':'"', '`':'`'}
-let g:AutoPairsMapSpace = 0
-let g:AutoPairsMapCR = 0
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""

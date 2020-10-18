@@ -13,8 +13,12 @@ antigen bundle kubectl
 #antigen bundle lein
 antigen bundle command-not-found
 
+antigen bundle history-substring-search
+
 # Syntax highlighting bundle.
 antigen bundle zsh-users/zsh-syntax-highlighting
+
+
 
 # Load the theme.
 antigen theme agnoster
