@@ -29,3 +29,8 @@ antigen theme agnoster
 
 # Tell Antigen that you're done.
 antigen apply
+
+
+if [ $(hostname) = "home" ] && [ -z "${DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
+  exec startx
+fi
