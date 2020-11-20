@@ -100,3 +100,6 @@
 [submodule "zsh/antigen"]
 	path = zsh/antigen
 	url = https://github.com/zsh-users/antigen.git
+[submodule "vim/.vim/bundle/nord-vim"]
+	path = vim/.vim/bundle/nord-vim
+	url = https://github.com/arcticicestudio/nord-vim.git

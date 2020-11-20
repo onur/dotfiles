@@ -113,7 +113,7 @@ map <F5> :Gstatus<enter>
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plugin 'itchyny/lightline.vim'
 let g:lightline = {
-      \ 'colorscheme': 'onehalfdark',
+      \ 'colorscheme': 'nord',
       \ 'active': {
       \   'left': [ [ 'mode', 'paste' ],
       \             [ 'fugitive', 'readonly', 'relativepath', 'modified' ] ],
@@ -549,10 +549,16 @@ let g:indent_guides_color_change_percent = 3
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " auto-close stuff                                         "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Plugin 'jiangmiao/auto-pairs'
-let g:AutoPairs = {'(':')', '[':']', "'":"'",'"':'"', '`':'`'}
-let g:AutoPairsMapSpace = 0
-let g:AutoPairsMapCR = 0
+"Plugin 'jiangmiao/auto-pairs'
+"let g:AutoPairs = {'(':')', '[':']', "'":"'",'"':'"', '`':'`'}
+"let g:AutoPairsMapSpace = 0
+"let g:AutoPairsMapCR = 0
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" nord theme                                               "
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Plugin 'arcticicestudio/nord-vim'
 
 
 
@@ -584,7 +590,7 @@ autocmd FileType vimwiki setlocal nowrap
 "let g:hybrid_use_Xresources = 1
 "colorscheme jellybeans
 "colorscheme nnkd
-colorscheme onehalfdark
+colorscheme nord
 
 " git-gutter colors
 highlight GitGutterAdd guifg=#8c9440
