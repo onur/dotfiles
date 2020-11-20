@@ -32,8 +32,8 @@ URxvt.letterSpace: -1
 
 !URxvt*backgroundPixmap: /home/onur/2015-Yamaha-MT-07-Moto-Cage-12.png;op=keep-aspect
 !URxvt*background:            #000000
-URxvt*background:            #151515
-URxvt*backgroundPixmap:
+!URxvt*background:            #151515
+!URxvt*backgroundPixmap:
 
 
 !! SOLARIZED
@@ -189,33 +189,83 @@ URxvt*backgroundPixmap:
 !*color15:      #c5c8c6
 
 
-! jellybeans
-*background: #151515
-!*foreground: #888888
-*foreground: #E8E8D3
-! black
-*color0: #1C1C1C
-*color8: #404040
-! red
-*color1: #B85335
-*color9: #CF6A4C
-! green
-*color2: #799D6A
-*color10: #99AD6A
-! yellow
-*color3: #FFB964
-*color11: #FAD07A
-! blue
-*color4: #667899
-*color12: #8197BF
-! magenta
-*color5: #8787AF
-*color13: #C6B6EE
-! cyan
-*color6: #668799
-*color14: #8FBFDC
-! white
-!*color7: #888888
-!*color15: #E8E8D3
-*color7: #E8E8E8
-*color15: #999999
+!! jellybeans
+!*background: #151515
+!!*foreground: #888888
+!*foreground: #E8E8D3
+!! black
+!*color0: #1C1C1C
+!*color8: #404040
+!! red
+!*color1: #B85335
+!*color9: #CF6A4C
+!! green
+!*color2: #799D6A
+!*color10: #99AD6A
+!! yellow
+!*color3: #FFB964
+!*color11: #FAD07A
+!! blue
+!*color4: #667899
+!*color12: #8197BF
+!! magenta
+!*color5: #8787AF
+!*color13: #C6B6EE
+!! cyan
+!*color6: #668799
+!*color14: #8FBFDC
+!! white
+!!*color7: #888888
+!!*color15: #E8E8D3
+!*color7: #E8E8E8
+!*color15: #999999
+
+
+! nord theme
+! Copyright (c) 2016-present Arctic Ice Studio <development@arcticicestudio.com>
+! Copyright (c) 2016-present Sven Greb <code@svengreb.de>
+
+! Project:    Nord XResources
+! Version:    0.1.0
+! Repository: https://github.com/arcticicestudio/nord-xresources
+! License:    MIT
+
+#define nord0 #2E3440
+#define nord1 #3B4252
+#define nord2 #434C5E
+#define nord3 #4C566A
+#define nord4 #D8DEE9
+#define nord5 #E5E9F0
+#define nord6 #ECEFF4
+#define nord7 #8FBCBB
+#define nord8 #88C0D0
+#define nord9 #81A1C1
+#define nord10 #5E81AC
+#define nord11 #BF616A
+#define nord12 #D08770
+#define nord13 #EBCB8B
+#define nord14 #A3BE8C
+#define nord15 #B48EAD
+
+*.foreground:   nord4
+*.background:   nord0
+*.cursorColor:  nord4
+*fading: 35
+*fadeColor: nord3
+
+*.color0: nord1
+*.color1: nord11
+*.color2: nord14
+*.color3: nord13
+*.color4: nord9
+*.color5: nord15
+*.color6: nord8
+*.color7: nord5
+*.color8: nord3
+*.color9: nord11
+*.color10: nord14
+*.color11: nord13
+*.color12: nord9
+*.color13: nord15
+*.color14: nord7
+*.color15: nord6
