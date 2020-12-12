@@ -250,7 +250,7 @@ URxvt.letterSpace: -1
 *.foreground:   nord4
 *.background:   nord0
 *.cursorColor:  nord4
-*fading: 35
+*fading: 5
 *fadeColor: nord3
 
 *.color0: nord1
