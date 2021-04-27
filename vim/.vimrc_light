@@ -89,7 +89,7 @@ Plugin 'gmarik/vundle'
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plugin 'itchyny/lightline.vim'
 let g:lightline = {
-      \ 'colorscheme': 'jellybeans',
+      \ 'colorscheme': 'nord',
       \ 'active': {
       \   'left': [ [ 'mode', 'paste' ],
       \             [ 'fugitive', 'readonly', 'relativepath', 'modified' ] ],
@@ -178,6 +178,12 @@ let g:vimwiki_list = [{'path': '~/vimwiki/',
 Plugin 'jamessan/vim-gnupg'
 
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" nord theme                                               "
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Plugin 'arcticicestudio/nord-vim'
+
+
 call vundle#end()
 filetype plugin indent on
 
@@ -192,7 +198,7 @@ autocmd FileType rust setlocal colorcolumn=100
 " color scheme                                             "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "let g:hybrid_use_Xresources = 1
-colorscheme jellybeans
+colorscheme nord
 
 " git-gutter colors
 highlight GitGutterAdd guifg=#8c9440

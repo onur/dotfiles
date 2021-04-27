@@ -52,6 +52,7 @@ autocmd BufNewFile *.pl 0r $HOME/.vim/templates/skeleton.pl
 autocmd BufNewFile *.cc 0r $HOME/.vim/templates/skeleton.cc
 autocmd BufNewFile *.cpp 0r $HOME/.vim/templates/skeleton.cc
 autocmd BufNewFile *.vue 0r $HOME/.vim/templates/skeleton.vue
+autocmd BufNewFile docker-compose*.yml 0r $HOME/.vim/templates/docker-compose.yml
 
 
 " shortcuts to run perl and c programs
@@ -65,7 +66,7 @@ map <F9> :!gcc -g -Wall % <enter> :!$PWD/a.out <enter>
 " mojolicious html files have .html.ep subfix
 " treat them as html
 au BufRead,BufNewFile *.html.ep setfiletype html
-au BufRead,BufNewFile *.vue setfiletype html
+" au BufRead,BufNewFile *.vue setfiletype html
 
 " handlebar templates
 au BufRead,BufNewFile *.hbs setfiletype htmldjango
@@ -106,6 +107,11 @@ map <F5> :Gstatus<enter>
 "let g:airline#extensions#tabline#show_close_button = 0
 "let g:airline#extensions#tabline#show_tab_type = 0
 
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" vim-vue                                                  "
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Plugin 'posva/vim-vue'
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -576,6 +582,7 @@ inoremap <expr> <M-,> pumvisible() ? '<C-n>' :
 
 
 autocmd FileType html setlocal shiftwidth=2 tabstop=2 colorcolumn=100
+autocmd FileType vue setlocal shiftwidth=2 tabstop=2 colorcolumn=100
 autocmd FileType javascript setlocal shiftwidth=2 tabstop=2
 autocmd FileType htmldjango setlocal shiftwidth=2 tabstop=2
 autocmd FileType rust setlocal colorcolumn=100

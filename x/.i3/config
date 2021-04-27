@@ -188,11 +188,15 @@ new_window pixel 1
 
 
 # for sc
+# to get window class:
+# xprop | grep WM_CLASS | awk '{print $4}'
 for_window [class="Sc4-mod-manager"] floating enable
 for_window [class="Sc4-mod-manager"] border normal
 for_window [class="hl_linux"] floating enable
 for_window [class="Wine"] floating enable
+for_window [class="explorer.exe"] floating enable
 for_window [class="Godot"] floating enable
+for_window [class="GTA3"] floating enable
 for_window [class="XCOM: Enemy Within"] floating enable
 #for_window [class="XCOM: Enemy Within"] fullscreen
 
