@@ -97,12 +97,15 @@
 [submodule "vim/.vim/bundle/vim-terraform"]
 	path = vim/.vim/bundle/vim-terraform
 	url = https://github.com/hashivim/vim-terraform.git
-[submodule "zsh/antigen"]
-	path = zsh/antigen
-	url = https://github.com/zsh-users/antigen.git
 [submodule "vim/.vim/bundle/nord-vim"]
 	path = vim/.vim/bundle/nord-vim
 	url = https://github.com/arcticicestudio/nord-vim.git
 [submodule "vim/.vim/bundle/vim-vue"]
 	path = vim/.vim/bundle/vim-vue
 	url = https://github.com/posva/vim-vue.git
+[submodule "zsh/ohmyzsh"]
+	path = zsh/ohmyzsh
+	url = https://github.com/ohmyzsh/ohmyzsh.git
+[submodule "zsh/zsh-syntax-highlighting"]
+	path = zsh/zsh-syntax-highlighting
+	url = https://github.com/zsh-users/zsh-syntax-highlighting.git
