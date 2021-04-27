@@ -56,7 +56,4 @@ if [ $(hostname) = "home" ]; then
 
   # gource
   alias gource='gource -s 0.5 --auto-skip-seconds 0.1'
-
-  # urxvt vig
-  alias urxvt-big-font='urxvt -fn xft:Hack:size=15'
 fi
