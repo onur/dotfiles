@@ -250,18 +250,15 @@ let g:ConqueTerm_FastMode=0
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " vim-markdown: syntax highlighting for markdown files     "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Plugin 'tpope/vim-markdown'
+"Plugin 'tpope/vim-markdown'
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " vimwiki: local wiki inside vim                           "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plugin 'vimwiki'
-let g:vimwiki_list = [{'path': '~/.vimwiki/',
-        \ 'template_path': '~/.vimwiki/',
-        \ 'template_default': 'template',
-        \ 'template_ext': '.html',
-        \ 'path_html': '/mnt/onur-home-server/public_html/vimwiki' }]
+let g:vimwiki_list = [{'path': '~/.vimwiki/docs',
+        \ 'syntax': 'markdown', 'ext': '.md' }]
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
