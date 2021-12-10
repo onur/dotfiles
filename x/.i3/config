@@ -204,6 +204,7 @@ for_window [class="XCOM: Enemy Within"] floating enable
 
 # always run comptron
 #exec_always compton -b --backend glx --vsync opengl-swc
+exec_always /usr/lib/notification-daemon/notification-daemon
 
 # gaps
 #gaps inner 10
