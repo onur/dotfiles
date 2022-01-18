@@ -114,8 +114,7 @@ source $ZSH/oh-my-zsh.sh
 # zsh code highlight
 source $HOME/dotfiles/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-
 # startx
-if [ $(hostname) = "home" ] && [ -z "${DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
+if [ -f "$HOME/.xinitrc" ] && [ -z "${DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
   exec startx
 fi

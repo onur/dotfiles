@@ -27,10 +27,9 @@ alias imzala='gpg -bas'
 alias bellek='ps aux | awk '\''{sum +=$4}; END {print sum}'\'''
 alias most-used-commands='awk '\''{print $1}'\'' ~/.bash_history | sort | uniq -c | sort -rn | head -n 10'
 
-# alio only aliases
-if [ $(hostname) = "home" ]; then
+# xorg only aliases
+if [ -f "$HOME/.xinitrc" ]; then
   alias shutdown='sudo shutdown -hP now'
-  #alias suspend-mem='sudo s2ram'
   alias suspend-mem='echo mem | sudo tee /sys/power/state'
   alias suspend-disk='sudo s2disk'
   alias suspend-disk-reboot='sudo s2disk -P "shutdown method = reboot"'
