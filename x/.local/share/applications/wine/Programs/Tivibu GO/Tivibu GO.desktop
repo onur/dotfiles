@@ -1,8 +1,0 @@
-[Desktop Entry]
-Name=Tivibu GO
-Exec=env WINEPREFIX="/tmp/tivibu" wine-development C:\\\\windows\\\\command\\\\start.exe /Unix /tmp/tivibu/dosdevices/c:/ProgramData/Microsoft/Windows/Start\\ Menu/Programs/Tivibu\\ GO/Tivibu\\ GO.lnk
-Type=Application
-StartupNotify=true
-Path=/tmp/tivibu/dosdevices/c:/Program Files (x86)/Tivibu GO
-Icon=194A_icon.0
-StartupWMClass=tivibugo.exe
