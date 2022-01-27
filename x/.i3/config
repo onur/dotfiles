@@ -33,6 +33,7 @@ client.urgent              #FF0000   #FF0000    #FF0000
 
 # start dmenu (a program launcher)
 bindsym $mod+d exec dmenu_run
+#bindsym $mod+d exec --no-startup-id rofi -show drun
 #bindsym $mod+d exec i3-dmenu-desktop
 #bindsym $mod+d exec j4-dmenu-desktop --display-binary --term="termite -e --hold" --dmenu="/usr/bin/rofi -dmenu -p 'apps:'"
 # There also is the (new) i3-dmenu-desktop which only displays applications
