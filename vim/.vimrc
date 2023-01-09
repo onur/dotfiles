@@ -206,7 +206,7 @@ Plugin 'Valloric/MatchTagAlways'
 " emmet-vim: provides support for expanding abbreviations  "
 "            similar to emmet.io                           "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Plugin 'mattn/emmet-vim'
+"Plugin 'mattn/emmet-vim'
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -258,7 +258,8 @@ let g:ConqueTerm_FastMode=0
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plugin 'vimwiki'
 let g:vimwiki_list = [{'path': '~/.vimwiki/docs',
-        \ 'syntax': 'markdown', 'ext': '.md' }]
+        \ 'syntax': 'markdown', 'ext': '', 'index': 'index.md' }]
+let g:vimwiki_global_ext = 0
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""

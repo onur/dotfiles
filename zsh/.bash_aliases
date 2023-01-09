@@ -26,6 +26,10 @@ alias ssh-i='ssh i.onur.im'
 alias imzala='gpg -bas'
 alias bellek='ps aux | awk '\''{sum +=$4}; END {print sum}'\'''
 alias most-used-commands='awk '\''{print $1}'\'' ~/.bash_history | sort | uniq -c | sort -rn | head -n 10'
+alias password-generator="tr -cd '[:alnum:]' < /dev/urandom | fold -w32 | head -n1"
+
+# calendar
+alias cal='ncal -M -3 -wb'
 
 # xorg only aliases
 if [ -f "$HOME/.xinitrc" ]; then
@@ -55,4 +59,6 @@ if [ -f "$HOME/.xinitrc" ]; then
 
   # gource
   alias gource='gource -s 0.5 --auto-skip-seconds 0.1'
+
+  alias xclip='xclip -r -selection clipboard'
 fi

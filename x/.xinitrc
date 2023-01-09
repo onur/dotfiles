@@ -11,7 +11,7 @@ xrandr --dpi 96
 #    --output DP-5 --off
 xsetroot -solid '#333333'
 xset r rate 250 50
-xset m 2 10
+#xset m 2 10
 setxkbmap tr alt
 nvidia-settings -a InitialPixmapPlacement=2
 nvidia-settings -a GlyphCache=1

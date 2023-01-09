@@ -3,4 +3,5 @@ file:///home/onur/torrent torrent
 file:///home/onur/code code
 file:///home/onur/Downloads Downloads
 file:///mnt/flash flash
-file:///tmp
+file:///tmp tmp
+dav://rtorrent.apollo.vpn.onur.im:53990/ dav://rtorrent.apollo.vpn.onur.im:53990/
