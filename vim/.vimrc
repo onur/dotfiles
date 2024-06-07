@@ -45,6 +45,7 @@ autocmd FileType html setlocal shiftwidth=2 tabstop=2 colorcolumn=100
 autocmd FileType vue setlocal shiftwidth=2 tabstop=2 colorcolumn=100
 autocmd FileType javascript setlocal shiftwidth=2 tabstop=2
 autocmd FileType htmldjango setlocal shiftwidth=2 tabstop=2
+autocmd FileType vim setlocal shiftwidth=2 tabstop=2
 autocmd FileType rust setlocal colorcolumn=100
 autocmd FileType vimwiki setlocal nowrap
 
@@ -100,37 +101,37 @@ map <F7> :Git commit<enter>
 
 " https://github.com/itchyny/lightline.vim
 let g:lightline = {
-      \ 'colorscheme': 'nord',
-      \ 'active': {
-      \   'left': [ [ 'mode', 'paste' ],
-      \             [ 'gitbranch' ],
-      \             [ 'readonly', 'relativepath', 'modified' ] ],
-      \   'right': [ [ 'trailing', 'lineinfo' ],
-      \              ['percent'],
-      \              [ 'fileformat', 'fileencoding', 'filetype' ] ]
-      \ },
-      \ 'component': {
-      \   'readonly': '%{&filetype=="help"?"":&readonly?"⭤":""}',
-      \   'modified': '%{&filetype=="help"?"":&modified?"+":&modifiable?"":"-"}'
-      \ },
-      \ 'component_visible_condition': {
-      \   'readonly': '(&filetype!="help"&& &readonly)',
-      \   'modified': '(&filetype!="help"&&(&modified||!&modifiable))',
-      \   'fugitive': '(exists("*FugitiveHead") && ""!=FugitiveHead)'
-      \ },
-      \ 'component_expand': {
-      \   'trailing': 'TrailingSpaceWarning'
-      \ },
-      \ 'component_type': {
-      \   'trailing': 'warning'
-      \ },
-      \ 'component_function': {
-      \   'gitbranch': 'FugitiveHead'
-      \ },
-      \ 'tabline': {
-      \     'left': [ [ 'tabs' ] ],
-      \     'right': [ [ 'close' ] ] }
-      \ }
+  \ 'colorscheme': 'nord',
+  \ 'active': {
+  \   'left': [ [ 'mode', 'paste' ],
+  \             [ 'gitbranch' ],
+  \             [ 'readonly', 'relativepath', 'modified' ] ],
+  \   'right': [ [ 'trailing', 'lineinfo' ],
+  \              ['percent'],
+  \              [ 'fileformat', 'fileencoding', 'filetype' ] ]
+  \ },
+  \ 'component': {
+  \   'readonly': '%{&filetype=="help"?"":&readonly?"⭤":""}',
+  \   'modified': '%{&filetype=="help"?"":&modified?"+":&modifiable?"":"-"}'
+  \ },
+  \ 'component_visible_condition': {
+  \   'readonly': '(&filetype!="help"&& &readonly)',
+  \   'modified': '(&filetype!="help"&&(&modified||!&modifiable))',
+  \   'fugitive': '(exists("*FugitiveHead") && ""!=FugitiveHead)'
+  \ },
+  \ 'component_expand': {
+  \   'trailing': 'TrailingSpaceWarning'
+  \ },
+  \ 'component_type': {
+  \   'trailing': 'warning'
+  \ },
+  \ 'component_function': {
+  \   'gitbranch': 'FugitiveHead'
+  \ },
+  \ 'tabline': {
+  \     'left': [ [ 'tabs' ] ],
+  \     'right': [ [ 'close' ] ] }
+  \ }
 
 function! s:ftMatches(ft_name)
   return &ft =~ a:ft_name
@@ -156,7 +157,7 @@ map <F2> :NERDTreeToggle <enter>
 
 " https://github.com/vimwiki/vimwiki.git
 let g:vimwiki_list = [{'path': '~/.vimwiki/docs',
-        \ 'syntax': 'markdown', 'ext': 'md', 'index': 'index' }]
+  \ 'syntax': 'markdown', 'ext': 'md', 'index': 'index' }]
 let g:vimwiki_global_ext = 0
 
 " https://github.com/nathanaelkane/vim-indent-guides
