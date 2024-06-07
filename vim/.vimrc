@@ -105,7 +105,8 @@ let g:lightline = {
       \   'left': [ [ 'mode', 'paste' ],
       \             [ 'gitbranch' ],
       \             [ 'readonly', 'relativepath', 'modified' ] ],
-      \   'right': [ [ 'syntastic', 'trailing', 'lineinfo' ], ['percent'],
+      \   'right': [ [ 'trailing', 'lineinfo' ],
+      \              ['percent'],
       \              [ 'fileformat', 'fileencoding', 'filetype' ] ]
       \ },
       \ 'component': {
@@ -115,17 +116,13 @@ let g:lightline = {
       \ 'component_visible_condition': {
       \   'readonly': '(&filetype!="help"&& &readonly)',
       \   'modified': '(&filetype!="help"&&(&modified||!&modifiable))',
-      \   'fugitive': '(exists("*fugitive#head") && ""!=fugitive#head())'
+      \   'fugitive': '(exists("*FugitiveHead") && ""!=FugitiveHead)'
       \ },
       \ 'component_expand': {
-      \   'syntastic': 'SyntasticStatuslineFlag',
-      \   'trailing': 'TrailingSpaceWarning',
-      \   'indentation': 'MixedIndentSpaceWarning'
+      \   'trailing': 'TrailingSpaceWarning'
       \ },
       \ 'component_type': {
-      \   'syntastic': 'error',
-      \   'trailing': 'warning',
-      \   'indentation': 'warning'
+      \   'trailing': 'warning'
       \ },
       \ 'component_function': {
       \   'gitbranch': 'FugitiveHead'
@@ -139,26 +136,10 @@ function! s:ftMatches(ft_name)
   return &ft =~ a:ft_name
 endfunction
 
-augroup AutoSyntastic
-  autocmd!
-  autocmd BufWritePost *.c,*.cpp call s:syntastic()
-augroup END
-function! s:syntastic()
-  SyntasticCheck
-  call lightline#update()
-endfunction
-
 function! TrailingSpaceWarning()
   if s:ftMatches('help') || winwidth(0) < 80 | return '' | endif
   let l:trailing = search('\s$', 'nw')
   return (l:trailing != 0) ? '… trailing[' . trailing . ']' : ''
-endfunction
-
-function! MixedIndentSpaceWarning()
-  if s:ftMatches('help') || winwidth(0) < 80 | return '' | endif
-  let l:tabs = search('^\t', 'nw')
-  let l:spaces = search('^ ', 'nw')
-  return (l:tabs != 0 && l:spaces != 0) ? '» mixed-indent[' . tabs . ']' : ''
 endfunction
 
 " https://github.com/airblade/vim-gitgutter
