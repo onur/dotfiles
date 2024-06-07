@@ -55,10 +55,6 @@ if [ -f "$HOME/.xinitrc" ]; then
   alias mpn='mplayer -nocache'
   alias mocp='mocp'
 
-  # vi lightweight vim
-  alias vi='vim -u $HOME/.vimrc_light'
-  alias gvi='gvim -u $HOME/.vimrc_light'
-
   # todo
   alias t=$HOME/.todo/todo.sh
 
