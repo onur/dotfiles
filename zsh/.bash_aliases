@@ -3,6 +3,7 @@
 # programlar
 alias rsync='rsync -av'
 alias gs='gst'
+alias vi='vim -Nu NONE'
 
 # cesitli
 alias imzala='gpg -bas'
