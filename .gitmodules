@@ -40,3 +40,6 @@
 [submodule "vim/.vim/pack/plugins/start/vim-motivate"]
 	path = vim/.vim/pack/plugins/start/vim-motivate
 	url = https://github.com/onur/vim-motivate.git
+[submodule "vim/.vim/pack/plugins/start/vim-better-whitespace"]
+	path = vim/.vim/pack/plugins/start/vim-better-whitespace
+	url = https://github.com/ntpeters/vim-better-whitespace.git
