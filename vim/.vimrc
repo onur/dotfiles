@@ -17,7 +17,6 @@
 " as published by Sam Hocevar. See http://www.wtfpl.net/ for more details.
 
 
-
 colorscheme nord              " color scheme
 let mapleader = ","           " leader key
 syntax on                     " syntax highlighting always on
