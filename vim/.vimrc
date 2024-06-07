@@ -144,7 +144,7 @@ highlight GitGutterDelete guifg=#cc6666
 " https://github.com/scrooloose/nerdtree
 map <F2> :NERDTreeToggle <enter>
 
-" https://github.com/vimwiki/vimwiki.git
+" https://github.com/vimwiki/vimwiki
 let g:vimwiki_list = [{'path': '~/.vimwiki/docs',
   \ 'syntax': 'markdown', 'ext': 'md', 'index': 'index' }]
 let g:vimwiki_global_ext = 0
