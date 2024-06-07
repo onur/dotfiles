@@ -35,6 +35,7 @@ set background=dark           " default vim background is dark
 set colorcolumn=81            " show a color in column 81
 set clipboard=unnamed         " share clipboard between vim sessions
 set cursorline                " highlight current line number
+set titlestring=%f            " titlestring is just file name
 
 " key bindings
 inoremap jk <ESC>             " jk is escape
@@ -58,23 +59,20 @@ autocmd BufNewFile *.cpp 0r $HOME/.vim/templates/skeleton.cc
 autocmd BufNewFile *.vue 0r $HOME/.vim/templates/skeleton.vue
 autocmd BufNewFile docker-compose*.yml 0r $HOME/.vim/templates/docker-compose.yml
 
-" gui options
+" guioptions
 if has("gui_running")
   set guifont=Hack\ 10
 
-  " guioptions set lrbLR and -lrbLR to remove scrollbars
-  " :help guioptions
+  " set lrbLR and -lrbLR to remove scrollbars
   set guioptions+=lrbLR
   set guioptions-=lrbLR
+
   " remove menubar and toolbar as well
   set guioptions-=m
   set guioptions-=T
 
   " Make tabline looks like text
   set guioptions-=e
-
-  " titlestring is just file name
-  set titlestring=%f
 endif
 
 
