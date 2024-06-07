@@ -1,9 +1,42 @@
-[submodule "vim/.vim/bundle/vim-gdscript"]
-	path = vim/.vim/bundle/vim-gdscript
-	url = https://github.com/quabug/vim-gdscript.git
 [submodule "zsh/ohmyzsh"]
 	path = zsh/ohmyzsh
 	url = https://github.com/ohmyzsh/ohmyzsh.git
 [submodule "zsh/zsh-syntax-highlighting"]
 	path = zsh/zsh-syntax-highlighting
 	url = https://github.com/zsh-users/zsh-syntax-highlighting.git
+[submodule "vim/.vim/pack/plugins/start/lightline.vim"]
+	path = vim/.vim/pack/plugins/start/lightline.vim
+	url = https://github.com/itchyny/lightline.vim.git
+[submodule "vim/.vim/pack/plugins/start/nord-vim"]
+	path = vim/.vim/pack/plugins/start/nord-vim
+	url = https://github.com/arcticicestudio/nord-vim.git
+[submodule "vim/.vim/pack/plugins/start/vim-fugitive"]
+	path = vim/.vim/pack/plugins/start/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive.git
+[submodule "vim/.vim/pack/plugins/start/nerdtree"]
+	path = vim/.vim/pack/plugins/start/nerdtree
+	url = https://github.com/scrooloose/nerdtree.git
+[submodule "vim/.vim/pack/plugins/start/vim-gitgutter"]
+	path = vim/.vim/pack/plugins/start/vim-gitgutter
+	url = https://github.com/airblade/vim-gitgutter.git
+[submodule "vim/.vim/pack/plugins/start/eregex.vim"]
+	path = vim/.vim/pack/plugins/start/eregex.vim
+	url = https://github.com/othree/eregex.vim.git
+[submodule "vim/.vim/pack/plugins/start/vimwiki"]
+	path = vim/.vim/pack/plugins/start/vimwiki
+	url = https://github.com/vimwiki/vimwiki.git
+[submodule "vim/.vim/pack/plugins/start/supertab"]
+	path = vim/.vim/pack/plugins/start/supertab
+	url = https://github.com/ervandew/supertab.git
+[submodule "vim/.vim/pack/plugins/start/ctrlp.vim"]
+	path = vim/.vim/pack/plugins/start/ctrlp.vim
+	url = https://github.com/ctrlpvim/ctrlp.vim.git
+[submodule "vim/.vim/pack/plugins/start/nerdcommenter"]
+	path = vim/.vim/pack/plugins/start/nerdcommenter
+	url = https://github.com/preservim/nerdcommenter.git
+[submodule "vim/.vim/pack/plugins/start/vim-indent-guides"]
+	path = vim/.vim/pack/plugins/start/vim-indent-guides
+	url = https://github.com/nathanaelkane/vim-indent-guides.git
+[submodule "vim/.vim/pack/plugins/start/vim-motivate"]
+	path = vim/.vim/pack/plugins/start/vim-motivate
+	url = https://github.com/onur/vim-motivate.git
