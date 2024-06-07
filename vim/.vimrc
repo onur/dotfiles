@@ -17,11 +17,7 @@
 " as published by Sam Hocevar. See http://www.wtfpl.net/ for more details.
 
 
-colorscheme nord              " color scheme
-let mapleader = ","           " leader key
-syntax on                     " syntax highlighting always on
-filetype plugin indent on     " allow plugins to indent
-set nocompatible              " a must for vim
+set nocompatible              " disable vi compatibility
 set expandtab                 " expand tabs, use spaces instead of tabs
 set shiftwidth=4              " shiftwidth spaces to use for each indent
 set tabstop=4                 " tabstop spaces <Tab> in the file counts for
@@ -36,9 +32,13 @@ set colorcolumn=81            " show a color in column 81
 set clipboard=unnamed         " share clipboard between vim sessions
 set cursorline                " highlight current line number
 set titlestring=%f            " titlestring is just file name
+syntax on                     " syntax highlighting always on
+let mapleader = ","           " leader key
+colorscheme nord              " color scheme
+filetype plugin indent on     " allow plugins to indent
 
 " key bindings
-inoremap jk <ESC>             " jk is escape
+inoremap jk <ESC>                      " jk is escape
 nnoremap <Leader>rtw :%s/\s\+$//e<CR>  " remove trailing whitespaces
 
 " filetype specific options
