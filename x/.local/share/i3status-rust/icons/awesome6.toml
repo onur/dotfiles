@@ -1,4 +1,4 @@
-# FontAwesome 5: https://fontawesome.com/icons?d=gallery&p=2&m=free
+# FontAwesome 6: https://fontawesome.com/v6/search?m=free
 backlight = [
     "\U0001f315",
     "\U0001f314",
@@ -9,18 +9,22 @@ backlight = [
 bat_charging = "\uf1e6"
 bat_not_available = "\uf244"
 bat = [
-	"\uf244",
-	"\uf243",
-	"\uf242",
-	"\uf241",
-	"\uf240",
+    "\uf244",
+    "\uf243",
+    "\uf242",
+    "\uf241",
+    "\uf240",
 ]
 bell = "\uf0f3"
 bell-slash = "\uf1f6"
 bluetooth = "\uf294"
 calendar = "\uf073"
 cogs = "\uf085"
-cpu = "\uf3fd" # fa-tachometer-alt (other variations of this icon are not free)
+cpu = [ # fa-gauge-{min,max} are not free
+    "\uf624", # fa-gauge
+    "\uf624", # fa-gauge (2 times so that the gauge will go high at 66% which looks appropriate for the icon fa-gauge-high)
+    "\uf625", # fa-gauge-high
+]
 cpu_boost_on = "\uf205"
 cpu_boost_off = "\uf204"
 disk_drive = "\uf0a0"
@@ -68,9 +72,9 @@ unknown = "\uf128"
 update = "\uf062"
 uptime = "\uf2f2"
 volume = [
-	"\uf026",
-	"\uf027",
-	"\uf028",
+    "\uf026",
+    "\uf027",
+    "\uf028",
 ]
 volume_muted = "\uf6a9"
 microphone = "\uf3c9"

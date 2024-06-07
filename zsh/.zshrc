@@ -77,6 +77,7 @@ DISABLE_MAGIC_FUNCTIONS="true"
 plugins=(
     git
     kubectl
+    kubectx
     command-not-found
     history-substring-search
     colored-man-pages
@@ -111,6 +112,11 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 
+# Kube ctx
+RPS1='$(kubectx_prompt_info)'
+# kube_ps1
+#RPS1='$(kube_ps1)'
+
 # zsh code highlight
 source $HOME/dotfiles/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
@@ -118,3 +124,9 @@ source $HOME/dotfiles/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 if [ -f "$HOME/.xinitrc" ] && [ -z "${DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
   exec startx
 fi
+
+#kgs() {
+#    kubectl get secret -o go-template='{{range $k,$v := .data}}{{"### "}}{{$k}}{{"\n"}}{{$v|base64decode}}{{"\n\n"}}{{end}}' "$@";
+#}
+
+eval "$(mcfly init zsh)"

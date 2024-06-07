@@ -12,6 +12,7 @@ alias sc='screen'
 alias l2='links2 -g'
 alias le='less'
 alias rsync='rsync -av'
+alias gs='gst'
 
 # sudo
 alias aptitude='sudo aptitude'
@@ -30,6 +31,10 @@ alias password-generator="tr -cd '[:alnum:]' < /dev/urandom | fold -w32 | head -
 
 # calendar
 alias cal='ncal -M -3 -wb'
+
+# nc aliases
+alias kcnc='export KUBECONFIG=$(ncc kubeconfig)'
+alias n='ncc'
 
 # xorg only aliases
 if [ -f "$HOME/.xinitrc" ]; then
@@ -62,3 +67,4 @@ if [ -f "$HOME/.xinitrc" ]; then
 
   alias xclip='xclip -r -selection clipboard'
 fi
+
