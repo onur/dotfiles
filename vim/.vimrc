@@ -64,26 +64,17 @@ if has("gui_running")
 
   " guioptions set lrbLR and -lrbLR to remove scrollbars
   " :help guioptions
-  set go+=lrbLR
-  set go-=lrbLR
+  set guioptions+=lrbLR
+  set guioptions-=lrbLR
   " remove menubar and toolbar as well
-  set go-=m
-  set go-=T
+  set guioptions-=m
+  set guioptions-=T
 
   " Make tabline looks like text
   set guioptions-=e
 
   " titlestring is just file name
   set titlestring=%f
-
-  " noequalalways
-  " I don't want all windows to equal each other
-  set noequalalways
-
-  " gitgutter
-  " This is a bug in gitgutter
-  " showing a background
-  highlight clear SignColumn
 endif
 
 
