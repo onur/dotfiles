@@ -23,9 +23,9 @@ let mapleader = ","           " leader key
 syntax on                     " syntax highlighting always on
 filetype plugin indent on     " allow plugins to indent
 set nocompatible              " a must for vim
-set et                        " expand tabs, use spaces instead of tabs
-set sw=4                      " shiftwidth spaces to use for each indent
-set ts=4                      " tabstop spaces <Tab> in the file counts for
+set expandtab                 " expand tabs, use spaces instead of tabs
+set shiftwidth=4              " shiftwidth spaces to use for each indent
+set tabstop=4                 " tabstop spaces <Tab> in the file counts for
 set number                    " show line numbers
 set numberwidth=4             " with of line numbers
 set dir=$HOME/.vim/swp/       " swap directory
@@ -37,15 +37,17 @@ set colorcolumn=81            " show a color in column 81
 set clipboard=unnamed         " share clipboard between vim sessions
 set cursorline                " highlight current line number
 
+" key bindings
+inoremap jk <ESC>             " jk is escape
+nnoremap <Leader>rtw :%s/\s\+$//e<CR>  " remove trailing whitespaces
 
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Custom keybinds                                          "
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" jk is ESC
-inoremap jk <ESC>
-
-" remove trailing whitespaces
-nnoremap <Leader>rtw :%s/\s\+$//e<CR>
+" filetype specific options
+autocmd FileType html setlocal shiftwidth=2 tabstop=2 colorcolumn=100
+autocmd FileType vue setlocal shiftwidth=2 tabstop=2 colorcolumn=100
+autocmd FileType javascript setlocal shiftwidth=2 tabstop=2
+autocmd FileType htmldjango setlocal shiftwidth=2 tabstop=2
+autocmd FileType rust setlocal colorcolumn=100
+autocmd FileType vimwiki setlocal nowrap
 
 " new file templates
 autocmd BufNewFile *.html 0r $HOME/.vim/templates/skeleton.html
@@ -56,17 +58,7 @@ autocmd BufNewFile *.cpp 0r $HOME/.vim/templates/skeleton.cc
 autocmd BufNewFile *.vue 0r $HOME/.vim/templates/skeleton.vue
 autocmd BufNewFile docker-compose*.yml 0r $HOME/.vim/templates/docker-compose.yml
 
-" filetype specific options
-autocmd FileType html setlocal shiftwidth=2 tabstop=2 colorcolumn=100
-autocmd FileType vue setlocal shiftwidth=2 tabstop=2 colorcolumn=100
-autocmd FileType javascript setlocal shiftwidth=2 tabstop=2
-autocmd FileType htmldjango setlocal shiftwidth=2 tabstop=2
-autocmd FileType rust setlocal colorcolumn=100
-autocmd FileType vimwiki setlocal nowrap
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" GUI OPTIONS                                              "
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" gui options
 if has("gui_running")
   set guifont=Hack\ 10
 
@@ -95,7 +87,7 @@ if has("gui_running")
 endif
 
 
-" PLUGINS
+" plugins
 " https://github.com/arcticicestudio/nord-vim
 " https://github.com/ervandew/supertab
 " https://github.com/preservim/nerdcommenter
