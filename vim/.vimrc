@@ -10,7 +10,7 @@
 "   ░       ░                           ░
 "
 "
-" Copyright (c) 2015 Onur Aslan <onuraslan@gmail.com>
+" Copyright (c) 2015-2024 Onur Aslan <onuraslan@gmail.com>
 "
 " This work is free. You can redistribute it and/or modify it under the
 " terms of the Do What The Fuck You Want To Public License, Version 2,
@@ -18,9 +18,11 @@
 
 
 
-set nocompatible              " a must for vim
+colorscheme nord              " color scheme
 let mapleader = ","           " leader key
 syntax on                     " syntax highlighting always on
+filetype plugin indent on     " allow plugins to indent
+set nocompatible              " a must for vim
 set et                        " expand tabs, use spaces instead of tabs
 set sw=4                      " shiftwidth spaces to use for each indent
 set ts=4                      " tabstop spaces <Tab> in the file counts for
@@ -54,13 +56,58 @@ autocmd BufNewFile *.cpp 0r $HOME/.vim/templates/skeleton.cc
 autocmd BufNewFile *.vue 0r $HOME/.vim/templates/skeleton.vue
 autocmd BufNewFile docker-compose*.yml 0r $HOME/.vim/templates/docker-compose.yml
 
+" filetype specific options
+autocmd FileType html setlocal shiftwidth=2 tabstop=2 colorcolumn=100
+autocmd FileType vue setlocal shiftwidth=2 tabstop=2 colorcolumn=100
+autocmd FileType javascript setlocal shiftwidth=2 tabstop=2
+autocmd FileType htmldjango setlocal shiftwidth=2 tabstop=2
+autocmd FileType rust setlocal colorcolumn=100
+autocmd FileType vimwiki setlocal nowrap
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" GUI OPTIONS                                              "
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+if has("gui_running")
+  set guifont=Hack\ 10
+
+  " guioptions set lrbLR and -lrbLR to remove scrollbars
+  " :help guioptions
+  set go+=lrbLR
+  set go-=lrbLR
+  " remove menubar and toolbar as well
+  set go-=m
+  set go-=T
+
+  " Make tabline looks like text
+  set guioptions-=e
+
+  " titlestring is just file name
+  set titlestring=%f
+
+  " noequalalways
+  " I don't want all windows to equal each other
+  set noequalalways
+
+  " gitgutter
+  " This is a bug in gitgutter
+  " showing a background
+  highlight clear SignColumn
+endif
+
+
 " PLUGINS
-" https://github.com/tpope/vim-fugitive.git
+" https://github.com/arcticicestudio/nord-vim
+" https://github.com/ervandew/supertab
+" https://github.com/preservim/nerdcommenter
+" https://github.com/onur/vim-motivate
+" https://github.com/othree/eregex.vim
+" https://github.com/ctrlpvim/ctrlp.vim
+" https://github.com/tpope/vim-fugitive
 map <F5> :Git<enter>
 map <F6> :Git diff<enter>
 map <F7> :Git commit<enter>
 
-" https://github.com/itchyny/lightline.vim.git
+" https://github.com/itchyny/lightline.vim
 let g:lightline = {
       \ 'colorscheme': 'nord',
       \ 'active': {
@@ -123,107 +170,25 @@ function! MixedIndentSpaceWarning()
   return (l:tabs != 0 && l:spaces != 0) ? '» mixed-indent[' . tabs . ']' : ''
 endfunction
 
-" https://github.com/airblade/vim-gitgutter.git
+" https://github.com/airblade/vim-gitgutter
 let g:gitgutter_sign_added = '★'
 let g:gitgutter_sign_modified = '☉'
 let g:gitgutter_sign_removed = '☆'
 let g:gitgutter_sign_modified_removed = '☆'
+highlight GitGutterAdd guifg=#8c9440
+highlight GitGutterChange guifg=#de935f
+highlight GitGutterDelete guifg=#cc6666
 
-" https://github.com/scrooloose/nerdtree.git
+" https://github.com/scrooloose/nerdtree
 map <F2> :NERDTreeToggle <enter>
 
-" https://github.com/othree/eregex.vim.git
 " https://github.com/vimwiki/vimwiki.git
 let g:vimwiki_list = [{'path': '~/.vimwiki/docs',
         \ 'syntax': 'markdown', 'ext': 'md', 'index': 'index' }]
 let g:vimwiki_global_ext = 0
 
-" https://github.com/preservim/nerdcommenter
-" https://github.com/onur/vim-motivate
 " https://github.com/nathanaelkane/vim-indent-guides
 let g:indent_guides_enable_on_vim_startup = 1
 let g:indent_guides_start_level = 2
 let g:indent_guides_guide_size = 1
 let g:indent_guides_color_change_percent = 3
-
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"" nord theme                                               "
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" https://github.com/arcticicestudio/nord-vim.git
-
-
-filetype plugin indent on
-
-autocmd FileType html setlocal shiftwidth=2 tabstop=2 colorcolumn=100
-autocmd FileType vue setlocal shiftwidth=2 tabstop=2 colorcolumn=100
-autocmd FileType javascript setlocal shiftwidth=2 tabstop=2
-autocmd FileType htmldjango setlocal shiftwidth=2 tabstop=2
-autocmd FileType rust setlocal colorcolumn=100
-autocmd FileType vimwiki setlocal nowrap
-
-
-
-
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" color scheme                                             "
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"let g:hybrid_use_Xresources = 1
-"colorscheme jellybeans
-"colorscheme nnkd
-colorscheme nord
-
-" git-gutter colors
-highlight GitGutterAdd guifg=#8c9440
-highlight GitGutterChange guifg=#de935f
-highlight GitGutterDelete guifg=#cc6666
-
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" GUI OPTIONS                                              "
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-if has("gui_running")
-  " guifont
-  set guifont=Hack\ 10
-  " some other fonts:
-  " * Consolas\ 12
-  " * Roboto\ Mono\ for\ Powerline\ 10
-  " * Terminus\ 10
-  " * Ubuntu\ Mono\ 14
-  " * Monospace\ 10
-  " * Droid\ Sans\ Mono\ 11
-  " * DejaVu\ Sans\ Mono\ for\ Powerline\ 10
-  " * Source\ Code\ Pro
-  " * Consolas\ 10
-  " * Monaco\ 11
-  " * Ubuntu\ Mono\ derivative\ Powerline\ 12
-
-  " guioptions set lrbLR and -lrbLR to remove scrollbars
-  " :help guioptions
-  set go+=lrbLR
-  set go-=lrbLR
-  " remove menubar and toolbar as well
-  set go-=m
-  set go-=T
-
-  " Make tabline looks like text
-  set guioptions-=e
-
-  " default size of gui window
-  " not usable since i3
-  "set lines=28 columns=88
-
-  " titlestring is just file name
-  set titlestring=%f
-
-  " noequalalways
-  " I don't want all windows to equal each other
-  set noea
-
-  " gitgutter
-  " This is a bug in gitgutter
-  " showing a background
-  highlight clear SignColumn
-
-endif
